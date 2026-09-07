@@ -61,6 +61,15 @@
             height: 200px;
             object-fit: contain;
         }
+
+        fieldset {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 
@@ -75,10 +84,53 @@
     </nav>
 
     <aside class="item3">
-        <h3>Menú</h3>
-        <p>Protecciones</p>
-        <p>Indumentaria</p>
-        <p>Accesorios</p>
+
+        <form>
+
+            <fieldset>
+                <legend>Búsqueda</legend>
+
+                <label>
+                    Buscar:
+                    <input type="text" name="buscar">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Precios</legend>
+
+                <label>
+                    Mínimo:
+                    <input type="number" name="minimo">
+                </label>
+
+                <label>
+                    Máximo:
+                    <input type="number" name="maximo">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Tipo de Productos</legend>
+
+                <label>
+                    <input type="checkbox" name="tipo" value="protectores">
+                    Protectores
+                </label>
+
+                <label>
+                    <input type="checkbox" name="tipo" value="entrenamiento">
+                    Entrenamiento
+                </label>
+
+                <label>
+                    <input type="checkbox" name="tipo" value="doboks">
+                    Doboks
+                </label>
+            </fieldset>
+
+        </form>
+
     </aside>
 
     <main class="item4">
