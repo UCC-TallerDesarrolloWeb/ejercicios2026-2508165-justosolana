@@ -7,6 +7,13 @@
     <title>Productos</title>
 
     <style>
+        :root {
+            --color-catalogo: #8b211e;
+            --color-carrito: #25227a;
+            --color-hover: #444444;
+            --color-texto: white;
+        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -14,7 +21,7 @@
 
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(4, minmax(0, 1fr));
             grid-template-areas:
                 "cabecera cabecera cabecera cabecera"
                 "links links links links"
@@ -44,9 +51,33 @@
             grid-area: footer;
         }
 
+        /* Botones de navegación */
+        .boton {
+            color: var(--color-texto);
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s ease, padding 0.3s ease;
+        }
+
+        .catalogo {
+            background-color: var(--color-catalogo);
+        }
+
+        .carrito {
+            background-color: var(--color-carrito);
+        }
+
+        .boton:hover {
+            background-color: var(--color-hover);
+            padding: 15px;
+        }
+
+        /* Grilla de productos */
         .productos {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(3, minmax(0, 1fr));
             gap: 15px;
         }
 
@@ -62,6 +93,7 @@
             object-fit: contain;
         }
 
+        /* Panel de búsqueda */
         fieldset {
             margin-bottom: 10px;
         }
@@ -69,6 +101,12 @@
         label {
             display: block;
             margin-bottom: 10px;
+        }
+
+        fieldset input[type="text"],
+        fieldset input[type="number"] {
+            max-width: 100%;
+            box-sizing: border-box;
         }
     </style>
 </head>
@@ -80,7 +118,8 @@
     </header>
 
     <nav class="item2">
-        <a href="productos.html">Productos</a>
+        <button type="button" class="boton catalogo">Catálogo</button>
+        <button type="button" class="boton carrito">Carrito de Compras</button>
     </nav>
 
     <aside class="item3">
