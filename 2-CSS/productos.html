@@ -9,24 +9,50 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
         }
 
-        h1 {
-            text-align: center;
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas:
+                "cabecera cabecera cabecera cabecera"
+                "links links links links"
+                "aside main main main"
+                "footer footer footer footer";
+            gap: 10px;
+            padding: 10px;
         }
 
-        main {
+        .item1 {
+            grid-area: cabecera;
+        }
+
+        .item2 {
+            grid-area: links;
+        }
+
+        .item3 {
+            grid-area: aside;
+        }
+
+        .item4 {
+            grid-area: main;
+        }
+
+        .item5 {
+            grid-area: footer;
+        }
+
+        .productos {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 15px;
-            max-width: 1000px;
-            margin: 0 auto;
         }
 
         .tarjeta {
             border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 15px;
+            padding: 10px;
             text-align: center;
         }
 
@@ -38,43 +64,64 @@
     </style>
 </head>
 
-<body>
+<body class="grid-container">
 
-    <h1>Productos deportivos</h1>
+    <header class="item1">
+        <h1>Productos</h1>
+    </header>
 
-    <main>
+    <nav class="item2">
+        <a href="productos.html">Productos</a>
+    </nav>
 
-        <div class="tarjeta">
-            <img src="https://placehold.co/300x200?text=Casco" alt="Casco">
-            <h3>Casco</h3>
-        </div>
+    <aside class="item3">
+        <h3>Menú</h3>
+        <p>Protecciones</p>
+        <p>Indumentaria</p>
+        <p>Accesorios</p>
+    </aside>
 
-        <div class="tarjeta">
-            <img src="https://placehold.co/300x200?text=Escudo" alt="Escudo">
-            <h3>Escudo de potencia</h3>
-        </div>
+    <main class="item4">
 
-        <div class="tarjeta">
-            <img src="https://placehold.co/300x200?text=Protector" alt="Protector">
-            <h3>Protector deportivo</h3>
-        </div>
+        <div class="productos">
 
-        <div class="tarjeta">
-            <img src="https://placehold.co/300x200?text=Guantes" alt="Guantes">
-            <h3>Guantes</h3>
-        </div>
+            <div class="tarjeta">
+                <img src="https://placehold.co/300x200?text=Casco" alt="Casco">
+                <h3>Casco</h3>
+            </div>
 
-        <div class="tarjeta">
-            <img src="https://placehold.co/300x200?text=Uniforme" alt="Uniforme">
-            <h3>Uniforme</h3>
-        </div>
+            <div class="tarjeta">
+                <img src="https://placehold.co/300x200?text=Escudo" alt="Escudo">
+                <h3>Escudo de potencia</h3>
+            </div>
 
-        <div class="tarjeta">
-            <img src="https://placehold.co/300x200?text=Protecciones" alt="Protecciones">
-            <h3>Protecciones</h3>
+            <div class="tarjeta">
+                <img src="https://placehold.co/300x200?text=Protector" alt="Protector">
+                <h3>Protector deportivo</h3>
+            </div>
+
+            <div class="tarjeta">
+                <img src="https://placehold.co/300x200?text=Guantes" alt="Guantes">
+                <h3>Guantes</h3>
+            </div>
+
+            <div class="tarjeta">
+                <img src="https://placehold.co/300x200?text=Uniforme" alt="Uniforme">
+                <h3>Uniforme</h3>
+            </div>
+
+            <div class="tarjeta">
+                <img src="https://placehold.co/300x200?text=Protecciones" alt="Protecciones">
+                <h3>Protecciones</h3>
+            </div>
+
         </div>
 
     </main>
+
+    <footer class="item5">
+        <p>Pie de página</p>
+    </footer>
 
 </body>
 
