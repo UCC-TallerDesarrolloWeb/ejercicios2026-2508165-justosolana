@@ -63,3 +63,11 @@ const mostrarOcultar = (accion) => {
         document.getElementById("unDiv").style.display = "none";
     }
 }
+
+const abrirDialog = () => {
+    document.getElementById("detalleProducto").showModal();
+}
+
+const cerrarDialog = () => {
+    document.getElementById("detalleProducto").close();
+}
