@@ -1,3 +1,11 @@
+/**
+ * Convierte un valor ingresado a metros, pulgadas, pies y yardas.
+ *
+ * @function convertirUnidad
+ * @param {number} valor - Valor ingresado por el usuario.
+ * @param {string} unidad - Nombre de la unidad que fue modificada.
+ * @returns {void}
+ */
 function convertirUnidad(valor, unidad) {
 
     if (unidad == "metro") {
