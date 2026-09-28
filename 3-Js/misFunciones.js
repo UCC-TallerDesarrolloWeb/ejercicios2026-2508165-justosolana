@@ -53,3 +53,13 @@ function convertirGrados(grados) {
 function convertirRadianes(radianes) {
     document.getElementById("grados").value = radianes * 180 / Math.PI;
 }
+const mostrarOcultar = (accion) => {
+
+    if (accion == "mostrar") {
+        document.getElementById("unDiv").style.display = "block";
+    }
+
+    if (accion == "ocultar") {
+        document.getElementById("unDiv").style.display = "none";
+    }
+}
