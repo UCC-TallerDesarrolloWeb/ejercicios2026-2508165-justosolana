@@ -71,3 +71,51 @@ const abrirDialog = () => {
 const cerrarDialog = () => {
     document.getElementById("detalleProducto").close();
 }
+
+const sumar = () => {
+    let num1 = document.getElementById("nums1").value;
+    let num2 = document.getElementById("nums2").value;
+
+    if (num1 != "" && num2 != "") {
+        num1 = Number(num1);
+        num2 = Number(num2);
+
+        document.getElementById("totalS").value = num1 + num2;
+    }
+}
+
+const restar = () => {
+    let num1 = document.getElementById("numr1").value;
+    let num2 = document.getElementById("numr2").value;
+
+    if (num1 != "" && num2 != "") {
+        num1 = Number(num1);
+        num2 = Number(num2);
+
+        document.getElementById("totalR").value = num1 - num2;
+    }
+}
+
+const multiplicar = () => {
+    let num1 = document.getElementById("numm1").value;
+    let num2 = document.getElementById("numm2").value;
+
+    if (num1 != "" && num2 != "") {
+        num1 = Number(num1);
+        num2 = Number(num2);
+
+        document.getElementById("totalM").value = num1 * num2;
+    }
+}
+
+const dividir = () => {
+    let num1 = document.getElementById("numd1").value;
+    let num2 = document.getElementById("numd2").value;
+
+    if (num1 != "" && num2 != "") {
+        num1 = Number(num1);
+        num2 = Number(num2);
+
+        document.getElementById("totalD").value = num1 / num2;
+    }
+}
