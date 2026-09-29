@@ -90,6 +90,11 @@
             object-fit: contain;
         }
 
+        .tarjeta button {
+            padding: 8px;
+            cursor: pointer;
+        }
+
         fieldset {
             margin-bottom: 10px;
         }
@@ -104,6 +109,15 @@
             max-width: 100%;
             box-sizing: border-box;
         }
+
+        dialog {
+            text-align: center;
+            padding: 20px;
+        }
+
+        dialog img {
+            object-fit: contain;
+        }
     </style>
 </head>
 
@@ -114,8 +128,13 @@
     </header>
 
     <nav class="item2">
-        <button type="button" class="boton catalogo">Catálogo</button>
-        <button type="button" class="boton carrito">Carrito de Compras</button>
+        <button type="button" class="boton catalogo">
+            Catálogo
+        </button>
+
+        <button type="button" class="boton carrito">
+            Carrito de Compras
+        </button>
     </nav>
 
     <aside class="item3">
@@ -176,7 +195,9 @@
 
             <div id="contenidoDialog"></div>
 
-            <button onclick="cerrarDialog()">Cerrar</button>
+            <button type="button" onclick="cerrarDialog()">
+                Cerrar
+            </button>
 
         </dialog>
 

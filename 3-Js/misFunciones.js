@@ -55,6 +55,7 @@ function convertirGrados(grados) {
     document.getElementById("radianes").value = grados * Math.PI / 180;
 }
 
+
 function convertirRadianes(radianes) {
     document.getElementById("grados").value = radianes * 180 / Math.PI;
 }

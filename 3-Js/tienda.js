@@ -11,7 +11,7 @@ const productos = [
     },
     {
         nombre: "Dobok Dan",
-        description: "Bobok aprobado para torneos internacionales.",
+        description: "Dobok aprobado para torneos internacionales.",
         categoria: "Dobok",
         marca: "Daedo",
         talle: ["1", "2", "3", "4", "5", "6", "7", "8"],
@@ -41,8 +41,7 @@ const productos = [
     },
     {
         nombre: "Guantes 10 onzas",
-        description:
-            "Guantes de Sparring de 10 onzas habilitados para torneos internacionales",
+        description: "Guantes de Sparring de 10 onzas habilitados para torneos internacionales.",
         categoria: "Protectores",
         marca: "Daedo",
         talle: ["s/talle"],
@@ -52,7 +51,7 @@ const productos = [
     },
     {
         nombre: "Protectores Pie",
-        description: "Protectores de Pie habilitados para torneos internacionales",
+        description: "Protectores de Pie habilitados para torneos internacionales.",
         categoria: "Protectores",
         marca: "Daedo",
         talle: ["XXS", "XS", "S", "M", "L", "XL"],
@@ -93,14 +92,17 @@ const abrirDetalleProducto = (indice) => {
     document.getElementById("contenidoDialog").innerHTML = `
         <h2>${producto.nombre}</h2>
 
-        <img src="images/${producto.imagen}"
-             alt="${producto.nombre}"
-             width="200">
+        <img
+            src="images/${producto.imagen}"
+            alt="${producto.nombre}"
+            width="200"
+        >
 
         <p>${producto.description}</p>
-        <p>Marca: ${producto.marca}</p>
-        <p>Categoría: ${producto.categoria}</p>
-        <p>Precio: $${producto.precio}</p>
+        <p><strong>Marca:</strong> ${producto.marca}</p>
+        <p><strong>Categoría:</strong> ${producto.categoria}</p>
+        <p><strong>Talle:</strong> ${producto.talle.join(", ")}</p>
+        <p><strong>Precio:</strong> $${producto.precio}</p>
     `;
 
     document.getElementById("detalleProducto").showModal();
