@@ -13,6 +13,9 @@ const convertirUnidad = (valor, unidad) => {
     let pie;
     let yarda;
 
+    valor = valor.replace(",", ".");
+    valor = Number(valor);
+
     if (unidad == "metro") {
         metro = valor;
         pulgada = valor * 39.3701;
@@ -41,10 +44,10 @@ const convertirUnidad = (valor, unidad) => {
         yarda = valor;
     }
 
-    document.getElementById("metro").value = metro;
-    document.getElementById("pulgada").value = pulgada;
-    document.getElementById("pie").value = pie;
-    document.getElementById("yarda").value = yarda;
+    document.getElementById("metro").value = metro.toFixed(2);
+    document.getElementById("pulgada").value = pulgada.toFixed(2);
+    document.getElementById("pie").value = pie.toFixed(2);
+    document.getElementById("yarda").value = yarda.toFixed(2);
 }
 function convertirGrados(grados) {
     document.getElementById("radianes").value = grados * Math.PI / 180;
