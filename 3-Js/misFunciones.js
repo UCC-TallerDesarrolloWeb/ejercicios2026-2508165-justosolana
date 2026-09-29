@@ -49,6 +49,8 @@ const convertirUnidad = (valor, unidad) => {
     document.getElementById("pie").value = pie.toFixed(2);
     document.getElementById("yarda").value = yarda.toFixed(2);
 }
+
+
 function convertirGrados(grados) {
     document.getElementById("radianes").value = grados * Math.PI / 180;
 }
@@ -56,6 +58,8 @@ function convertirGrados(grados) {
 function convertirRadianes(radianes) {
     document.getElementById("grados").value = radianes * 180 / Math.PI;
 }
+
+
 const mostrarOcultar = (accion) => {
 
     if (accion == "mostrar") {
@@ -67,19 +71,19 @@ const mostrarOcultar = (accion) => {
     }
 }
 
-const abrirDialog = () => {
-    document.getElementById("detalleProducto").showModal();
-}
 
 const cerrarDialog = () => {
     document.getElementById("detalleProducto").close();
 }
 
+
 const sumar = () => {
+
     let num1 = document.getElementById("nums1").value;
     let num2 = document.getElementById("nums2").value;
 
     if (num1 != "" && num2 != "") {
+
         num1 = Number(num1);
         num2 = Number(num2);
 
@@ -87,11 +91,14 @@ const sumar = () => {
     }
 }
 
+
 const restar = () => {
+
     let num1 = document.getElementById("numr1").value;
     let num2 = document.getElementById("numr2").value;
 
     if (num1 != "" && num2 != "") {
+
         num1 = Number(num1);
         num2 = Number(num2);
 
@@ -99,11 +106,14 @@ const restar = () => {
     }
 }
 
+
 const multiplicar = () => {
+
     let num1 = document.getElementById("numm1").value;
     let num2 = document.getElementById("numm2").value;
 
     if (num1 != "" && num2 != "") {
+
         num1 = Number(num1);
         num2 = Number(num2);
 
@@ -111,11 +121,14 @@ const multiplicar = () => {
     }
 }
 
+
 const dividir = () => {
+
     let num1 = document.getElementById("numd1").value;
     let num2 = document.getElementById("numd2").value;
 
     if (num1 != "" && num2 != "") {
+
         num1 = Number(num1);
         num2 = Number(num2);
 

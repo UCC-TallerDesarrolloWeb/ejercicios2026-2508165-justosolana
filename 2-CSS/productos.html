@@ -50,7 +50,6 @@
             grid-area: footer;
         }
 
-        /* Botones de navegación */
         .boton {
             color: var(--color-texto);
             border: none;
@@ -73,7 +72,6 @@
             padding: 15px;
         }
 
-        /* Grilla de productos */
         .productos {
             display: grid;
             grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -92,7 +90,6 @@
             object-fit: contain;
         }
 
-        /* Panel de búsqueda */
         fieldset {
             margin-bottom: 10px;
         }
@@ -176,9 +173,11 @@
         <div class="productos" id="productos"></div>
 
         <dialog id="detalleProducto">
-            <h2>Detalle de Producto</h2>
-            <p>Información del producto seleccionado.</p>
+
+            <div id="contenidoDialog"></div>
+
             <button onclick="cerrarDialog()">Cerrar</button>
+
         </dialog>
 
     </main>
