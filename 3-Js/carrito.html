@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Productos</title>
+    <title>Carrito de Compras</title>
 
     <style>
         :root {
@@ -24,7 +24,7 @@
             grid-template-areas:
                 "cabecera cabecera cabecera cabecera"
                 "links links links links"
-                "aside main main main"
+                "main main main main"
                 "footer footer footer footer";
             gap: 10px;
             padding: 10px;
@@ -36,10 +36,6 @@
 
         .item2 {
             grid-area: links;
-        }
-
-        .item3 {
-            grid-area: aside;
         }
 
         .item4 {
@@ -87,39 +83,13 @@
             height: 200px;
             object-fit: contain;
         }
-
-        .tarjeta button {
-            padding: 8px;
-            margin: 5px;
-            cursor: pointer;
-        }
-
-        fieldset {
-            margin-bottom: 10px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        fieldset input[type="text"],
-        fieldset input[type="number"] {
-            max-width: 100%;
-            box-sizing: border-box;
-        }
-
-        dialog {
-            text-align: center;
-            padding: 20px;
-        }
     </style>
 </head>
 
-<body class="grid-container" onload="mostrarProductos()">
+<body class="grid-container" onload="mostrarCarrito()">
 
     <header class="item1">
-        <h1>Productos</h1>
+        <h1>Carrito de Compras</h1>
     </header>
 
     <nav class="item2">
@@ -140,69 +110,14 @@
 
     </nav>
 
-    <aside class="item3">
-
-        <form>
-
-            <fieldset>
-                <legend>Búsqueda</legend>
-
-                <label>
-                    Buscar:
-                    <input type="text" name="buscar">
-                </label>
-            </fieldset>
-
-            <fieldset>
-                <legend>Precios</legend>
-
-                <label>
-                    Mínimo:
-                    <input type="number" name="minimo">
-                </label>
-
-                <label>
-                    Máximo:
-                    <input type="number" name="maximo">
-                </label>
-            </fieldset>
-
-            <fieldset>
-                <legend>Tipo de Productos</legend>
-
-                <label>
-                    <input type="checkbox" name="tipo" value="protectores">
-                    Protectores
-                </label>
-
-                <label>
-                    <input type="checkbox" name="tipo" value="entrenamiento">
-                    Entrenamiento
-                </label>
-
-                <label>
-                    <input type="checkbox" name="tipo" value="doboks">
-                    Doboks
-                </label>
-            </fieldset>
-
-        </form>
-
-    </aside>
-
     <main class="item4">
 
-        <div class="productos" id="productos"></div>
+        <h2>Productos en el carrito</h2>
 
-        <dialog id="detalleProducto">
-
-            <div id="contenidoDialog"></div>
-
-            <button type="button" onclick="cerrarDialog()">
-                Cerrar
-            </button>
-
-        </dialog>
+        <div
+            class="productos"
+            id="carritoProductos">
+        </div>
 
     </main>
 
@@ -210,7 +125,6 @@
         <p>Pie de página</p>
     </footer>
 
-    <script src="../3-Js/misFunciones.js"></script>
     <script src="../3-Js/tienda.js"></script>
 
 </body>
