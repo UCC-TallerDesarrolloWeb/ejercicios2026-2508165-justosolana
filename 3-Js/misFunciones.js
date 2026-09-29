@@ -83,7 +83,7 @@ const sumar = () => {
         num1 = Number(num1);
         num2 = Number(num2);
 
-        document.getElementById("totalS").value = num1 + num2;
+        document.getElementById("totalS").innerHTML = num1 + num2;
     }
 }
 
@@ -95,7 +95,7 @@ const restar = () => {
         num1 = Number(num1);
         num2 = Number(num2);
 
-        document.getElementById("totalR").value = num1 - num2;
+        document.getElementById("totalR").innerHTML = num1 - num2;
     }
 }
 
@@ -107,7 +107,7 @@ const multiplicar = () => {
         num1 = Number(num1);
         num2 = Number(num2);
 
-        document.getElementById("totalM").value = num1 * num2;
+        document.getElementById("totalM").innerHTML = num1 * num2;
     }
 }
 
@@ -119,6 +119,6 @@ const dividir = () => {
         num1 = Number(num1);
         num2 = Number(num2);
 
-        document.getElementById("totalD").value = num1 / num2;
+        document.getElementById("totalD").innerHTML = num1 / num2;
     }
 }
