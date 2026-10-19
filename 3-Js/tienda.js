@@ -61,36 +61,90 @@ const productos = [
     },
 ];
 
-
-const mostrarProductos = () => {
-
+const mostrarProductos = (lista = productos) => {
     let contenido = "";
 
-    productos.forEach((producto, indice) => {
+    lista.forEach((producto) => {
+        const indice = productos.indexOf(producto);
 
         contenido += `
             <div class="tarjeta">
-
-                <img src="images/${producto.imagen}" alt="${producto.nombre}">
+                <img
+                    src="images/${producto.imagen}"
+                    alt="${producto.nombre}"
+                >
 
                 <h3>${producto.nombre}</h3>
 
                 <p>Precio: $${producto.precio}</p>
 
-                <button onclick="abrirDetalleProducto(${indice})">
+                <button
+                    type="button"
+                    onclick="abrirDetalleProducto(${indice})"
+                >
                     Ver detalle de Producto
                 </button>
 
-                <button onclick="agregarAlCarrito(${indice})">
+                <button
+                    type="button"
+                    onclick="agregarAlCarrito(${indice})"
+                >
                     Agregar al carrito
                 </button>
-
             </div>
         `;
     });
 
+    if (lista.length === 0) {
+        contenido = "<p>No se encontraron productos.</p>";
+    }
+
     document.getElementById("productos").innerHTML = contenido;
-}
+};
+
+const filtrarProductos = () => {
+    const palabra = document.getElementById("buscar")
+        .value.trim().toLowerCase();
+
+    const minimo = document.getElementById("minimo").value;
+    const maximo = document.getElementById("maximo").value;
+    const marca = document.getElementById("marca").value;
+
+    const seleccionadas = document.querySelectorAll(
+        'input[name="categoria"]:checked'
+    );
+
+    const categorias = Array.from(seleccionadas).map(
+        (checkbox) => checkbox.value
+    );
+
+    const filtrados = productos.filter((producto) => {
+        const coincidePalabra = (
+            producto.nombre + " " + producto.description
+        ).toLowerCase().includes(palabra);
+
+        const coincideMinimo =
+            minimo === "" || producto.precio >= Number(minimo);
+
+        const coincideMaximo =
+            maximo === "" || producto.precio <= Number(maximo);
+
+        const coincideMarca =
+            marca === "" || producto.marca === marca;
+
+        const coincideCategoria =
+            categorias.length === 0 ||
+            categorias.includes(producto.categoria);
+
+        return coincidePalabra &&
+            coincideMinimo &&
+            coincideMaximo &&
+            coincideMarca &&
+            coincideCategoria;
+    });
+
+    mostrarProductos(filtrados);
+};
 
 
 const abrirDetalleProducto = (indice) => {
