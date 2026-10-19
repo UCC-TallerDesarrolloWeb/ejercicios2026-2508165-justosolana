@@ -7,7 +7,7 @@ const productos = [
         talle: ["1", "2", "3"],
         precio: 35000,
         web: "https://www.granmarctiendaonline.com.ar/productos/cabezal-cerrado/",
-        imagen: "cabezal-cerrado.webp",
+        imagen: "cabezal-cerrado.webp"
     },
     {
         nombre: "Dobok Dan",
@@ -17,7 +17,7 @@ const productos = [
         talle: ["1", "2", "3", "4", "5", "6", "7", "8"],
         precio: 115000,
         web: "https://www.daedo.com/products/taitf-10813",
-        imagen: "dobok.webp",
+        imagen: "dobok.webp"
     },
     {
         nombre: "Escudo de Potencia",
@@ -27,7 +27,7 @@ const productos = [
         talle: ["s/talle"],
         precio: 51700,
         web: "https://www.granmarctiendaonline.com.ar/productos/escudo-de-potencia-grande/",
-        imagen: "escudo-potencia.webp",
+        imagen: "escudo-potencia.webp"
     },
     {
         nombre: "Par de focos redondos",
@@ -37,7 +37,7 @@ const productos = [
         talle: ["s/talle"],
         precio: 15000,
         web: "https://www.granmarctiendaonline.com.ar/productos/foco-con-dedos/",
-        imagen: "foco-con-dedos.webp",
+        imagen: "foco-con-dedos.webp"
     },
     {
         nombre: "Guantes 10 onzas",
@@ -47,7 +47,7 @@ const productos = [
         talle: ["s/talle"],
         precio: 35000,
         web: "https://www.daedo.com/products/pritf-2020",
-        imagen: "protectores-manos.webp",
+        imagen: "protectores-manos.webp"
     },
     {
         nombre: "Protectores Pie",
@@ -57,9 +57,63 @@ const productos = [
         talle: ["XXS", "XS", "S", "M", "L", "XL"],
         precio: 35000,
         web: "https://www.daedo.com/collections/collection-itf-gloves/products/pritf-2022",
-        imagen: "protectores-manos.webp",
-    },
+        imagen: "protectores-manos.webp"
+    }
 ];
+
+// Convierte un precio al formato argentino.
+const formatearPrecio = (precio) => {
+    return new Intl.NumberFormat("es-AR", {
+        style: "currency",
+        currency: "ARS",
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+    }).format(precio);
+};
+
+// Agrupa también los productos guardados por las actividades anteriores.
+const obtenerCarrito = () => {
+    const guardados = JSON.parse(localStorage.getItem("carrito")) || [];
+    const carrito = [];
+
+    guardados.forEach((producto) => {
+        const existente = carrito.find(
+            (item) => item.nombre === producto.nombre
+        );
+
+        const cantidad = producto.cantidad || 1;
+
+        if (existente) {
+            existente.cantidad += cantidad;
+        } else {
+            carrito.push({
+                ...producto,
+                cantidad: cantidad
+            });
+        }
+    });
+
+    return carrito;
+};
+
+const guardarCarrito = (carrito) => {
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+};
+
+const actualizarContadorCarrito = () => {
+    const carrito = obtenerCarrito();
+    let cantidadTotal = 0;
+
+    carrito.forEach((producto) => {
+        cantidadTotal += producto.cantidad;
+    });
+
+    const contador = document.getElementById("contadorCarrito");
+
+    if (contador) {
+        contador.textContent = cantidadTotal;
+    }
+};
 
 const mostrarProductos = (lista = productos) => {
     let contenido = "";
@@ -76,7 +130,7 @@ const mostrarProductos = (lista = productos) => {
 
                 <h3>${producto.nombre}</h3>
 
-                <p>Precio: $${producto.precio}</p>
+                <p>Precio: ${formatearPrecio(producto.precio)}</p>
 
                 <button
                     type="button"
@@ -146,10 +200,8 @@ const filtrarProductos = () => {
     mostrarProductos(filtrados);
 };
 
-
 const abrirDetalleProducto = (indice) => {
-
-    let producto = productos[indice];
+    const producto = productos[indice];
 
     document.getElementById("contenidoDialog").innerHTML = `
         <h2>${producto.nombre}</h2>
@@ -164,54 +216,106 @@ const abrirDetalleProducto = (indice) => {
         <p><strong>Marca:</strong> ${producto.marca}</p>
         <p><strong>Categoría:</strong> ${producto.categoria}</p>
         <p><strong>Talle:</strong> ${producto.talle.join(", ")}</p>
-        <p><strong>Precio:</strong> $${producto.precio}</p>
+        <p>
+            <strong>Precio:</strong>
+            ${formatearPrecio(producto.precio)}
+        </p>
     `;
 
     document.getElementById("detalleProducto").showModal();
-}
-
+};
 
 const agregarAlCarrito = (indice) => {
+    const carrito = obtenerCarrito();
+    const producto = productos[indice];
 
-    let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+    const existente = carrito.find(
+        (item) => item.nombre === producto.nombre
+    );
 
-    carrito.push(productos[indice]);
+    if (existente) {
+        existente.cantidad += 1;
+    } else {
+        carrito.push({
+            ...producto,
+            cantidad: 1
+        });
+    }
 
-    localStorage.setItem("carrito", JSON.stringify(carrito));
+    guardarCarrito(carrito);
+    actualizarContadorCarrito();
 
     alert("Producto agregado al carrito");
-}
+};
 
 const mostrarCarrito = () => {
-    let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+    const carrito = obtenerCarrito();
+    const contenedor = document.getElementById("carritoProductos");
+
+    if (carrito.length === 0) {
+        contenedor.innerHTML = `
+            <p>No hay productos en el carrito.</p>
+            <p><strong>Total a pagar: ${formatearPrecio(0)}</strong></p>
+        `;
+
+        actualizarContadorCarrito();
+        return;
+    }
+
+    let total = 0;
 
     let contenido = `
-        <button type="button" onclick="vaciarCarrito()">
-            Vaciar el carrito
-        </button>
+        <div style="grid-column: 1 / -1;">
+            <button type="button" onclick="vaciarCarrito()">
+                Vaciar el carrito
+            </button>
+        </div>
     `;
 
     carrito.forEach((producto, indice) => {
+        const subtotal = producto.precio * producto.cantidad;
+        total += subtotal;
+
         contenido += `
             <div class="tarjeta">
-                <img src="images/${producto.imagen}" alt="${producto.nombre}">
+                <img
+                    src="images/${producto.imagen}"
+                    alt="${producto.nombre}"
+                >
 
                 <h3>${producto.nombre}</h3>
 
-                <p>Precio: $${producto.precio}</p>
+                <p>
+                    Precio unitario:
+                    ${formatearPrecio(producto.precio)}
+                </p>
 
-                <button type="button" onclick="eliminarProducto(${indice})">
+                <p>Cantidad: ${producto.cantidad}</p>
+
+                <p>
+                    <strong>
+                        Subtotal: ${formatearPrecio(subtotal)}
+                    </strong>
+                </p>
+
+                <button
+                    type="button"
+                    onclick="eliminarProducto(${indice})"
+                >
                     Eliminar el producto
                 </button>
             </div>
         `;
     });
 
-    if (carrito.length === 0) {
-        contenido = "<p>No hay productos en el carrito.</p>";
-    }
+    contenido += `
+        <div style="grid-column: 1 / -1;">
+            <h2>Total a pagar: ${formatearPrecio(total)}</h2>
+        </div>
+    `;
 
-    document.getElementById("carritoProductos").innerHTML = contenido;
+    contenedor.innerHTML = contenido;
+    actualizarContadorCarrito();
 };
 
 const vaciarCarrito = () => {
@@ -220,12 +324,12 @@ const vaciarCarrito = () => {
 };
 
 const eliminarProducto = (indice) => {
-    let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+    const carrito = obtenerCarrito();
 
     carrito.splice(indice, 1);
 
-    localStorage.setItem("carrito", JSON.stringify(carrito));
-
+    guardarCarrito(carrito);
     mostrarCarrito();
 };
 
+document.addEventListener("DOMContentLoaded", actualizarContadorCarrito);

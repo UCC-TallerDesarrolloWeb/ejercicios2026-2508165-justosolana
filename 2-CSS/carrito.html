@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito de Compras</title>
 
     <style>
@@ -83,6 +84,18 @@
             height: 200px;
             object-fit: contain;
         }
+
+        .productos button {
+            padding: 8px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 700px) {
+            .productos {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 
@@ -93,32 +106,27 @@
     </header>
 
     <nav class="item2">
-
         <button
             type="button"
             class="boton catalogo"
-            onclick="window.location.href='productos.html'">
+            onclick="window.location.href='productos.html'"
+        >
             Catálogo
         </button>
 
         <button
             type="button"
             class="boton carrito"
-            onclick="window.location.href='carrito.html'">
-            Carrito de Compras
+            onclick="window.location.href='carrito.html'"
+        >
+            Carrito de Compras (<span id="contadorCarrito">0</span>)
         </button>
-
     </nav>
 
     <main class="item4">
-
         <h2>Productos en el carrito</h2>
 
-        <div
-            class="productos"
-            id="carritoProductos">
-        </div>
-
+        <div class="productos" id="carritoProductos"></div>
     </main>
 
     <footer class="item5">

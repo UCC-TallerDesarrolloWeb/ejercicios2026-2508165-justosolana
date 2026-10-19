@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos</title>
 
     <style>
@@ -96,6 +97,7 @@
 
         fieldset {
             margin-bottom: 10px;
+            min-width: 0;
         }
 
         label {
@@ -104,7 +106,8 @@
         }
 
         fieldset input[type="text"],
-        fieldset input[type="number"] {
+        fieldset input[type="number"],
+        fieldset select {
             max-width: 100%;
             box-sizing: border-box;
         }
@@ -112,6 +115,22 @@
         dialog {
             text-align: center;
             padding: 20px;
+        }
+
+        @media (max-width: 700px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "cabecera"
+                    "links"
+                    "aside"
+                    "main"
+                    "footer";
+            }
+
+            .productos {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -123,125 +142,121 @@
     </header>
 
     <nav class="item2">
-
         <button
             type="button"
             class="boton catalogo"
-            onclick="window.location.href='productos.html'">
+            onclick="window.location.href='productos.html'"
+        >
             Catálogo
         </button>
 
         <button
             type="button"
             class="boton carrito"
-            onclick="window.location.href='carrito.html'">
-            Carrito de Compras
+            onclick="window.location.href='carrito.html'"
+        >
+            Carrito de Compras (<span id="contadorCarrito">0</span>)
         </button>
-
     </nav>
 
     <aside class="item3">
-    <form onsubmit="event.preventDefault()">
-        <fieldset>
-            <legend>Búsqueda</legend>
+        <form onsubmit="event.preventDefault()">
+            <fieldset>
+                <legend>Búsqueda</legend>
 
-            <label>
-                Buscar:
-                <input
-                    type="text"
-                    id="buscar"
-                    oninput="filtrarProductos()"
-                >
-            </label>
-        </fieldset>
+                <label>
+                    Buscar:
+                    <input
+                        type="text"
+                        id="buscar"
+                        oninput="filtrarProductos()"
+                    >
+                </label>
+            </fieldset>
 
-        <fieldset>
-            <legend>Precios</legend>
+            <fieldset>
+                <legend>Precios</legend>
 
-            <label>
-                Mínimo:
-                <input
-                    type="number"
-                    id="minimo"
-                    min="0"
-                    oninput="filtrarProductos()"
-                >
-            </label>
+                <label>
+                    Mínimo:
+                    <input
+                        type="number"
+                        id="minimo"
+                        min="0"
+                        oninput="filtrarProductos()"
+                    >
+                </label>
 
-            <label>
-                Máximo:
-                <input
-                    type="number"
-                    id="maximo"
-                    min="0"
-                    oninput="filtrarProductos()"
-                >
-            </label>
-        </fieldset>
+                <label>
+                    Máximo:
+                    <input
+                        type="number"
+                        id="maximo"
+                        min="0"
+                        oninput="filtrarProductos()"
+                    >
+                </label>
+            </fieldset>
 
-        <fieldset>
-            <legend>Marca</legend>
+            <fieldset>
+                <legend>Marca</legend>
 
-            <label>
-                Seleccionar marca:
-                <select id="marca" onchange="filtrarProductos()">
-                    <option value="">Todas</option>
-                    <option value="Gran Marc">Gran Marc</option>
-                    <option value="Daedo">Daedo</option>
-                </select>
-            </label>
-        </fieldset>
+                <label>
+                    Seleccionar marca:
+                    <select id="marca" onchange="filtrarProductos()">
+                        <option value="">Todas</option>
+                        <option value="Gran Marc">Gran Marc</option>
+                        <option value="Daedo">Daedo</option>
+                    </select>
+                </label>
+            </fieldset>
 
-        <fieldset>
-            <legend>Categoría</legend>
+            <fieldset>
+                <legend>Categoría</legend>
 
-            <label>
-                <input
-                    type="checkbox"
-                    name="categoria"
-                    value="Protectores"
-                    onchange="filtrarProductos()"
-                >
-                Protectores
-            </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="categoria"
+                        value="Protectores"
+                        onchange="filtrarProductos()"
+                    >
+                    Protectores
+                </label>
 
-            <label>
-                <input
-                    type="checkbox"
-                    name="categoria"
-                    value="Entrenamiento"
-                    onchange="filtrarProductos()"
-                >
-                Entrenamiento
-            </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="categoria"
+                        value="Entrenamiento"
+                        onchange="filtrarProductos()"
+                    >
+                    Entrenamiento
+                </label>
 
-            <label>
-                <input
-                    type="checkbox"
-                    name="categoria"
-                    value="Dobok"
-                    onchange="filtrarProductos()"
-                >
-                Doboks
-            </label>
-        </fieldset>
-    </form>
-</aside>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="categoria"
+                        value="Dobok"
+                        onchange="filtrarProductos()"
+                    >
+                    Doboks
+                </label>
+            </fieldset>
+        </form>
+    </aside>
 
     <main class="item4">
-
         <div class="productos" id="productos"></div>
 
         <dialog id="detalleProducto">
-
             <div id="contenidoDialog"></div>
 
             <button type="button" onclick="cerrarDialog()">
                 Cerrar
             </button>
-
         </dialog>
-
     </main>
 
     <footer class="item5">
