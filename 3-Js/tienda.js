@@ -128,31 +128,50 @@ const agregarAlCarrito = (indice) => {
     alert("Producto agregado al carrito");
 }
 
-
 const mostrarCarrito = () => {
-
     let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
-    let contenido = "";
+    let contenido = `
+        <button type="button" onclick="vaciarCarrito()">
+            Vaciar el carrito
+        </button>
+    `;
 
-    carrito.forEach((producto) => {
-
+    carrito.forEach((producto, indice) => {
         contenido += `
             <div class="tarjeta">
-
                 <img src="images/${producto.imagen}" alt="${producto.nombre}">
 
                 <h3>${producto.nombre}</h3>
 
                 <p>Precio: $${producto.precio}</p>
 
+                <button type="button" onclick="eliminarProducto(${indice})">
+                    Eliminar el producto
+                </button>
             </div>
         `;
     });
 
-    if (carrito.length == 0) {
+    if (carrito.length === 0) {
         contenido = "<p>No hay productos en el carrito.</p>";
     }
 
     document.getElementById("carritoProductos").innerHTML = contenido;
-}
+};
+
+const vaciarCarrito = () => {
+    localStorage.removeItem("carrito");
+    mostrarCarrito();
+};
+
+const eliminarProducto = (indice) => {
+    let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+    carrito.splice(indice, 1);
+
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+
+    mostrarCarrito();
+};
+
