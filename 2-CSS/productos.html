@@ -248,7 +248,17 @@
     </aside>
 
     <main class="item4">
-        <div class="productos" id="productos"></div>
+        <label for="orden">Ordenar por:</label>
+
+<select id="orden" onchange="filtrarProductos()">
+    <option value="">Orden original</option>
+    <option value="precio-asc">Precio: menor a mayor</option>
+    <option value="precio-desc">Precio: mayor a menor</option>
+    <option value="nombre-asc">Nombre: A-Z</option>
+    <option value="nombre-desc">Nombre: Z-A</option>
+</select>
+
+<div class="productos" id="productos"></div>
 
         <dialog id="detalleProducto">
             <div id="contenidoDialog"></div>

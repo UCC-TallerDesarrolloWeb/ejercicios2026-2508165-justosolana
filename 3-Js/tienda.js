@@ -61,7 +61,6 @@ const productos = [
     }
 ];
 
-// Convierte un precio al formato argentino.
 const formatearPrecio = (precio) => {
     return new Intl.NumberFormat("es-AR", {
         style: "currency",
@@ -71,7 +70,6 @@ const formatearPrecio = (precio) => {
     }).format(precio);
 };
 
-// Agrupa también los productos guardados por las actividades anteriores.
 const obtenerCarrito = () => {
     const guardados = JSON.parse(localStorage.getItem("carrito")) || [];
     const carrito = [];
@@ -156,6 +154,36 @@ const mostrarProductos = (lista = productos) => {
     document.getElementById("productos").innerHTML = contenido;
 };
 
+// Ordena una copia para conservar el orden original del catálogo.
+const ordenarProductos = (lista) => {
+    const orden = document.getElementById("orden").value;
+    const ordenados = [...lista];
+
+    switch (orden) {
+        case "precio-asc":
+            ordenados.sort((a, b) => a.precio - b.precio);
+            break;
+
+        case "precio-desc":
+            ordenados.sort((a, b) => b.precio - a.precio);
+            break;
+
+        case "nombre-asc":
+            ordenados.sort((a, b) =>
+                a.nombre.localeCompare(b.nombre, "es")
+            );
+            break;
+
+        case "nombre-desc":
+            ordenados.sort((a, b) =>
+                b.nombre.localeCompare(a.nombre, "es")
+            );
+            break;
+    }
+
+    return ordenados;
+};
+
 const filtrarProductos = () => {
     const palabra = document.getElementById("buscar")
         .value.trim().toLowerCase();
@@ -197,7 +225,7 @@ const filtrarProductos = () => {
             coincideCategoria;
     });
 
-    mostrarProductos(filtrados);
+    mostrarProductos(ordenarProductos(filtrados));
 };
 
 const abrirDetalleProducto = (indice) => {
