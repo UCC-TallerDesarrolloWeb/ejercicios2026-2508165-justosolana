@@ -1,0 +1,24 @@
+.calendar-container {
+  width: min(1100px, calc(100vw - 32px));
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 4px;
+  text-align: center;
+}
+
+.calendar-grid .dia {
+  width: 100%;
+  max-width: 52px;
+  aspect-ratio: 1;
+  padding: 0;
+  justify-self: center;
+}
+
+@media (min-width: 768px) {
+  .segundo-mes {
+    border-left: 1px solid var(--bs-border-color);
+  }
+}
