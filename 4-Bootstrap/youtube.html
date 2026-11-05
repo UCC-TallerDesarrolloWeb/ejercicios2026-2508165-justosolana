@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarjetas de YouTube</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="youtube.css" rel="stylesheet">
+</head>
+<body>
+  <main class="container my-5">
+    <h1 class="visually-hidden">Videos de Taller de Desarrollo Web</h1>
+    <div class="d-flex flex-wrap justify-content-center align-items-start gap-2">
+      <article class="card text-bg-dark border-0 video-card">
+        <a href="../2-CSS/productos.html" aria-label="Abrir ejercicio Vaciar carrito y eliminar producto">
+          <img src="https://ucc-tallerdesarrolloweb.github.io/filminas/images/ejercicios/satoshito89_01.png" class="card-img-top" alt="Tigre blanco entre plantas">
+        </a>
+        <div class="card-body p-2">
+          <div class="row g-2">
+            <div class="col-2 text-center">
+              <img src="../2-CSS/imagenes/icono_usuario.jpg" class="rounded-circle" width="36" height="36" alt="Avatar del canal Taller de Desarrollo Web">
+            </div>
+            <div class="col-10">
+              <h2 class="card-title fs-6 fw-bold mb-2"><a href="../2-CSS/productos.html" class="text-light text-decoration-none">Taller de Desarrollo Web - VaciarCarrito y EliminarProducto</a></h2>
+              <p class="text-white opacity-50 small mb-0">Taller de Desarrollo Web - Otro Ejercicio</p>
+              <p class="text-white opacity-50 small mb-0">230 vistas · 1 día</p>
+            </div>
+          </div>
+          <div class="action-buttons overflow-hidden">
+            <div class="row g-1 pt-2">
+              <div class="col-6"><button type="button" class="btn text-secondary fw-bold small w-100" data-action="later" aria-pressed="false">VER MÁS TARDE</button></div>
+              <div class="col-6"><button type="button" class="btn text-secondary fw-bold small w-100" data-action="queue" aria-pressed="false">AGREGAR A LA FILA</button></div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="card text-bg-dark border-0 video-card">
+        <a href="../2-CSS/productos.html" aria-label="Abrir ejercicio Vaciar carrito y eliminar producto">
+          <img src="https://ucc-tallerdesarrolloweb.github.io/filminas/images/ejercicios/satoshito89_01.png" class="card-img-top" alt="Tigre blanco entre plantas">
+        </a>
+        <div class="card-body p-2">
+          <div class="row g-2">
+            <div class="col-2 text-center">
+              <img src="../2-CSS/imagenes/icono_usuario.jpg" class="rounded-circle" width="36" height="36" alt="Avatar del canal Taller de Desarrollo Web">
+            </div>
+            <div class="col-10">
+              <h2 class="card-title fs-6 fw-bold mb-2"><a href="../2-CSS/productos.html" class="text-light text-decoration-none">Taller de Desarrollo Web - VaciarCarrito y EliminarProducto</a></h2>
+              <p class="text-white opacity-50 small mb-0">Taller de Desarrollo Web - Otro Ejercicio</p>
+              <p class="text-white opacity-50 small mb-0">230 vistas · 1 día</p>
+            </div>
+          </div>
+          <div class="action-buttons overflow-hidden">
+            <div class="row g-1 pt-2">
+              <div class="col-6"><button type="button" class="btn text-secondary fw-bold small w-100" data-action="later" aria-pressed="false">VER MÁS TARDE</button></div>
+              <div class="col-6"><button type="button" class="btn text-secondary fw-bold small w-100" data-action="queue" aria-pressed="false">AGREGAR A LA FILA</button></div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+    <p id="estado-video" class="text-center mt-4" role="status"></p>
+  </main>
+  <script src="youtube.js"></script>
+</body>
+</html>
