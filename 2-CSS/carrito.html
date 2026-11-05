@@ -53,6 +53,7 @@
             padding: 10px;
             cursor: pointer;
             font-size: 14px;
+            transition: background-color 0.25s ease, padding 0.25s ease;
         }
 
         .catalogo {
@@ -63,8 +64,10 @@
             background-color: var(--color-carrito);
         }
 
-        .boton:hover {
+        .boton:hover,
+        .boton:focus-visible {
             background-color: var(--color-hover);
+            padding: 14px 18px;
         }
 
         .productos {
