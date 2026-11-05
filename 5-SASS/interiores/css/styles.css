@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  color: #222;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 0;
+}
+.header .brand img {
+  display: block;
+  width: 85px;
+  height: auto;
+}
+.header nav {
+  display: flex;
+  gap: 32px;
+}
+.header nav a {
+  color: #666;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.header nav a:hover {
+  color: #ef7300;
+}
+
+.welcome {
+  background: #ef7300;
+  color: #fff;
+  padding: 64px 11%;
+}
+.welcome h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0 0 28px;
+}
+.welcome p {
+  font-size: 1rem;
+  line-height: 1.65;
+  margin: 0 0 28px;
+}
+.welcome .button {
+  display: inline-block;
+  background: #fff;
+  color: #222;
+  border: 1px solid #ccc;
+  padding: 14px 24px;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+.welcome .button:hover {
+  background: #f0f0f0;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 36px 0;
+}
+.portfolio img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1.8;
+  object-fit: cover;
+}
+
+.footer {
+  padding: 24px 16px;
+  margin-bottom: 32px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
+.footer p {
+  font-size: 0.7rem;
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+:focus-visible {
+  outline: 3px solid #2456a6;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    width: calc(100% - 32px);
+  }
+  .header {
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px 0;
+  }
+  .header nav {
+    width: 100%;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .welcome {
+    padding: 36px 24px;
+  }
+  .welcome h1 {
+    font-size: 1.65rem;
+  }
+  .portfolio {
+    grid-template-columns: 1fr;
+  }
+  .portfolio img {
+    aspect-ratio: 1.6;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

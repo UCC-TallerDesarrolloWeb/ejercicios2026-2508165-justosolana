@@ -1,0 +1,35 @@
+@mixin responsive {
+@media (max-width: 600px) {
+  .container {
+    width: calc(100% - 32px);
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px 0;
+
+    nav {
+      width: 100%;
+      justify-content: space-between;
+      gap: 12px;
+    }
+  }
+
+  .welcome {
+    padding: 36px 24px;
+
+    h1 {
+      font-size: 1.65rem;
+    }
+  }
+
+  .portfolio {
+    grid-template-columns: 1fr;
+
+    img {
+      aspect-ratio: 1.6;
+    }
+  }
+}
+}
