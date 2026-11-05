@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fondos en CSS</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 24px;
+            font-family: Arial, sans-serif;
+            background-color: #eef3f8;
+            color: #172535;
+        }
+
+        main {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .ejemplo {
+            min-height: 240px;
+            margin: 24px 0;
+            padding: 24px;
+            border: 8px dashed #1b416e;
+            background-color: #b6dfff;
+            background-image: url('imagenes/fondo_mario.jpg');
+        }
+
+        .etiqueta {
+            display: inline-block;
+            max-width: 100%;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 12px;
+            background-color: white;
+            color: #172535;
+            font-size: 1.1rem;
+        }
+
+        .repetido {
+            background-repeat: repeat;
+            background-size: 150px auto;
+            background-position: left top;
+        }
+
+        .centrado {
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+
+        .cubrir {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .origen {
+            background-repeat: no-repeat;
+            background-size: 200px auto;
+            background-position: right bottom;
+            background-origin: content-box;
+            background-clip: padding-box;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Fondos en CSS</h1>
+        <p>La misma imagen permite probar diferentes tamaños, posiciones y repeticiones.</p>
+        <section class="ejemplo repetido" aria-labelledby="repeticion">
+            <h2 class="etiqueta" id="repeticion">Imagen repetida: repeat y tamaño de 150 px</h2>
+        </section>
+        <section class="ejemplo centrado" aria-labelledby="centrado">
+            <h2 class="etiqueta" id="centrado">Imagen centrada: no-repeat y contain</h2>
+        </section>
+        <section class="ejemplo cubrir" aria-labelledby="cubrir">
+            <h2 class="etiqueta" id="cubrir">Imagen que cubre el fondo: cover</h2>
+        </section>
+        <section class="ejemplo origen" aria-labelledby="origen">
+            <h2 class="etiqueta" id="origen">Origen en el contenido y posición inferior derecha</h2>
+        </section>
+    </main>
+</body>
+</html>
