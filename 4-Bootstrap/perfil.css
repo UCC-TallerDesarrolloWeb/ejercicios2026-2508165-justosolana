@@ -1,0 +1,14 @@
+.profile-card {
+  width: 300px;
+  max-width: 100%;
+}
+
+.profile-cover {
+  height: 160px;
+  object-fit: cover;
+}
+
+.profile {
+  margin-top: -50px;
+  object-fit: cover;
+}

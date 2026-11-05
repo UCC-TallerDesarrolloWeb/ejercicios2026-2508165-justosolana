@@ -76,7 +76,7 @@
 -  [x] Instagram
 -  [x] Componente para selección de vuelos
 -  [x] Timeline
--  [ ] Componente Perfil
+-  [x] Componente Perfil
 -  [ ] Youtube
 
 ### SASS

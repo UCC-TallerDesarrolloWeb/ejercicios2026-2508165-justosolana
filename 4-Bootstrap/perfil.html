@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Componente Perfil</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="perfil.css" rel="stylesheet">
+</head>
+<body>
+  <main class="container d-flex justify-content-center my-5">
+    <article class="card profile-card">
+      <img src="../3-Js/images/fondo_numeros.jpg" class="card-img-top profile-cover" alt="Portada con números de colores">
+      <div class="card-body text-center position-relative pt-0">
+        <img src="../2-CSS/imagenes/icono_usuario.jpg" class="profile rounded-circle border border-3 border-white bg-white" width="100" height="100" alt="Avatar de Agustina Aliciardi">
+        <h1 class="card-title fs-5 mt-2" id="nombre-perfil">Agustina Aliciardi</h1>
+        <p class="card-text text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pulvinar lacus risus, et convallis ante sodales eget. Nulla ornare dui non tellus varius tincidunt.</p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#detalle-perfil" aria-expanded="false" aria-controls="detalle-perfil">Ver perfil</button>
+        <div class="collapse mt-3" id="detalle-perfil">
+          <p class="mb-0">Perfil de Agustina Aliciardi.</p>
+        </div>
+      </div>
+      <nav aria-label="Opciones del perfil">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item p-0">
+            <button class="list-group-item list-group-item-action border-0 d-flex align-items-center gap-2" type="button" data-bs-toggle="collapse" data-bs-target="#mensajes" aria-expanded="false" aria-controls="mensajes"><span aria-hidden="true">&#9993;</span> Ir a mensajes</button>
+            <div class="collapse px-3 pb-2 text-secondary small" id="mensajes">No hay mensajes para mostrar.</div>
+          </li>
+          <li class="list-group-item p-0">
+            <button class="list-group-item list-group-item-action border-0 d-flex align-items-center gap-2" type="button" data-bs-toggle="collapse" data-bs-target="#notificaciones" aria-expanded="false" aria-controls="notificaciones"><span aria-hidden="true">&#9834;</span> Notificaciones <span class="badge bg-danger">+99<span class="visually-hidden"> notificaciones</span></span></button>
+            <div class="collapse px-3 pb-2 text-secondary small" id="notificaciones">Tenés más de 99 notificaciones.</div>
+          </li>
+          <li class="list-group-item p-0">
+            <button class="list-group-item list-group-item-action border-0 d-flex align-items-center gap-2" type="button" data-bs-toggle="collapse" data-bs-target="#solicitudes" aria-expanded="false" aria-controls="solicitudes"><span aria-hidden="true">&#9823;</span> Solicitudes Pendientes</button>
+            <div class="collapse px-3 pb-2 text-secondary small" id="solicitudes">No hay solicitudes pendientes.</div>
+          </li>
+          <li class="list-group-item p-0">
+            <button class="list-group-item list-group-item-action border-0 d-flex align-items-center gap-2" type="button" data-bs-toggle="collapse" data-bs-target="#llamadas" aria-expanded="false" aria-controls="llamadas"><span aria-hidden="true">&#9742;</span> Llamar</button>
+            <div class="collapse px-3 pb-2 text-secondary small" id="llamadas">No hay un teléfono de contacto disponible.</div>
+          </li>
+        </ul>
+      </nav>
+    </article>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
