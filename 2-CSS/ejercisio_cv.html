@@ -19,6 +19,7 @@
             font-family: 'Roboto', sans-serif;
             text-align: center;
             background: linear-gradient(to right, lightblue, lightgray);
+            padding-top: 290px;
         }
 
         /* Estilo por CLASE */
@@ -35,7 +36,16 @@
 
         /* Estilo por ID */
         #presentacion {
-            min-height: 150px;
+            position: fixed;
+            top: 16px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            box-sizing: border-box;
+            height: 260px;
+            margin: 0;
+            overflow: auto;
+            opacity: 1;
         }
 
         #presentacion img {
