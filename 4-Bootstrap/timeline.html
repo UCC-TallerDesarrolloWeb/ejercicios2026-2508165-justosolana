@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timeline de tareas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <main class="container-fluid py-3">
+    <h1 class="visually-hidden">Timeline de tareas de enero y febrero</h1>
+    <div class="overflow-x-auto border" role="region" aria-label="Cronograma de ocho semanas; desplazamiento horizontal en pantallas pequeñas" tabindex="0">
+      <div style="min-width: 960px;">
+        <header class="bg-black text-white text-center">
+          <div class="row g-0">
+            <div class="col-6">
+              <h2 class="fs-5 fw-bold py-3 mb-0">Enero</h2>
+              <div class="row row-cols-4 g-0"><div class="col border border-light">Semana 1</div><div class="col border border-light">Semana 2</div><div class="col border border-light">Semana 3</div><div class="col border border-light">Semana 4</div></div>
+            </div>
+            <div class="col-6">
+              <h2 class="fs-5 fw-bold py-3 mb-0">Febrero</h2>
+              <div class="row row-cols-4 g-0"><div class="col border border-light">Semana 1</div><div class="col border border-light">Semana 2</div><div class="col border border-light">Semana 3</div><div class="col border border-light">Semana 4</div></div>
+            </div>
+          </div>
+        </header>
+        <section class="p-4 pt-5" aria-label="Tareas del proyecto">
+          <div class="row g-0 mb-3">
+            <div class="col-5 ">
+              <article class="bg-secondary text-white rounded-3 p-3 d-flex align-items-center justify-content-between gap-3">
+                <div>
+                  <p class="text-info mb-1">Completed</p>
+                  <h2 class="fs-5 fw-bold mb-1">Define Architecture</h2>
+                  <p class="opacity-50 mb-0"><time datetime="2026-01-20">20 Enero</time></p>
+                </div>
+                <div class="d-flex gap-1" aria-label="Responsables de la tarea">
+                  <img src="../2-CSS/imagenes/icono_usuario.jpg" class="rounded-circle border border-light" width="36" height="36" alt="Integrante 1">
+                  <img src="../2-CSS/imagenes/icono_usuario.jpg" class="rounded-circle border border-light" width="36" height="36" alt="Integrante 2">
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="row g-0 mb-3">
+            <div class="col-5 offset-3">
+              <article class="bg-secondary text-white rounded-3 p-3 d-flex align-items-center justify-content-between gap-3">
+                <div>
+                  <p class="text-warning mb-1">In Progress</p>
+                  <h2 class="fs-5 fw-bold mb-1">Define Architecture</h2>
+                  <p class="opacity-50 mb-0"><time datetime="2026-01-20">20 Enero</time></p>
+                </div>
+                <div class="d-flex gap-1" aria-label="Responsables de la tarea">
+                  <img src="../2-CSS/imagenes/icono_usuario.jpg" class="rounded-circle border border-light" width="36" height="36" alt="Integrante 1">
+                  <img src="../2-CSS/imagenes/icono_usuario.jpg" class="rounded-circle border border-light" width="36" height="36" alt="Integrante 2">
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="row g-0 mb-3">
+            <div class="col-5 offset-5">
+              <article class="bg-secondary text-white rounded-3 p-3 d-flex align-items-center justify-content-between gap-3">
+                <div>
+                  <p class="text-danger mb-1">Blocked</p>
+                  <h2 class="fs-5 fw-bold mb-1">Define Architecture</h2>
+                  <p class="opacity-50 mb-0"><time datetime="2026-01-20">20 Enero</time></p>
+                </div>
+                <div class="d-flex gap-1" aria-label="Responsables de la tarea">
+                  <img src="../2-CSS/imagenes/icono_usuario.jpg" class="rounded-circle border border-light" width="36" height="36" alt="Integrante 1">
+                  <img src="../2-CSS/imagenes/icono_usuario.jpg" class="rounded-circle border border-light" width="36" height="36" alt="Integrante 2">
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

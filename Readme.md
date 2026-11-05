@@ -75,7 +75,7 @@
 ### BootStrap
 -  [x] Instagram
 -  [x] Componente para selección de vuelos
--  [ ] Timeline
+-  [x] Timeline
 -  [ ] Componente Perfil
 -  [ ] Youtube
 
