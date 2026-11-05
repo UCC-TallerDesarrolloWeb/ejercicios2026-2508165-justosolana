@@ -1,0 +1,81 @@
+.tarjeta {
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.0705882353);
+  background-color: #fff;
+  color: #243044;
+}
+.tarjeta h1 {
+  color: #2456a6;
+  margin-top: 0;
+}
+.tarjeta p {
+  line-height: 1.6;
+}
+.tarjeta .acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.boton {
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  border: 0;
+  border-radius: 6px;
+  font: inherit;
+  text-decoration: none;
+}
+.boton:hover {
+  opacity: 0.8;
+}
+.boton:focus-visible {
+  outline: 3px solid #243044;
+  outline-offset: 3px;
+}
+.boton--principal {
+  background-color: #2456a6;
+  color: #fff;
+}
+.boton--exito {
+  background-color: #207044;
+  color: #fff;
+}
+.boton--peligro {
+  background-color: #ac2938;
+  color: #fff;
+}
+
+.aviso {
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 6px;
+  background-color: #2456a6;
+  color: #fff;
+}
+.aviso h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+.aviso p {
+  margin-bottom: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+  background-color: #f3f5f8;
+  color: #243044;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+/*# sourceMappingURL=styles.css.map */

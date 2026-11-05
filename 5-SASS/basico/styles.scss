@@ -1,0 +1,19 @@
+@use 'variables' as v;
+@use 'componentes';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: v.$espacio;
+  background-color: v.$fondo;
+  color: v.$texto;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+}

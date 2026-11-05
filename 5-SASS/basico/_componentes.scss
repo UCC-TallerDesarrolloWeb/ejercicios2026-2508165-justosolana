@@ -1,0 +1,70 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+.tarjeta {
+  padding: v.$espacio * 2;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px #00000012;
+  @include m.colores(v.$blanco, v.$texto);
+
+  h1 {
+    color: v.$principal;
+    margin-top: 0;
+  }
+
+  p {
+    line-height: 1.6;
+  }
+
+  .acciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: v.$espacio;
+  }
+}
+
+.boton {
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  border: 0;
+  border-radius: 6px;
+  font: inherit;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus-visible {
+    outline: 3px solid v.$texto;
+    outline-offset: 3px;
+  }
+
+  &--principal {
+    @include m.colores(v.$principal, v.$blanco);
+  }
+
+  &--exito {
+    @include m.colores(v.$exito, v.$blanco);
+  }
+
+  &--peligro {
+    @include m.colores(v.$peligro, v.$blanco);
+  }
+}
+
+.aviso {
+  margin-top: v.$espacio * 2;
+  padding: v.$espacio;
+  border-radius: 6px;
+  @include m.colores(v.$principal, v.$blanco);
+
+  h2 {
+    margin-top: 0;
+    font-size: 1.2rem;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}

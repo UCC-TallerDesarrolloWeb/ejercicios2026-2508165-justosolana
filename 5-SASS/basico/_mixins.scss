@@ -1,0 +1,4 @@
+@mixin colores($fondo, $letras) {
+  background-color: $fondo;
+  color: $letras;
+}

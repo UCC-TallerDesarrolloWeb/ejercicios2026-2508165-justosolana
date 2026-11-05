@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sass básico</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <section class="tarjeta" aria-labelledby="titulo">
+      <h1 id="titulo">Sass básico</h1>
+      <p>Ejemplo de variables, estilos anidados y mixins reutilizables.</p>
+      <nav class="acciones" aria-label="Ejemplos de estilos">
+        <a class="boton boton--principal" href="#variables">Variables</a>
+        <a class="boton boton--exito" href="#anidacion">Anidación</a>
+        <a class="boton boton--peligro" href="#mixins">Mixins</a>
+      </nav>
+      <section id="variables">
+        <h2>Variables</h2>
+        <p>Los colores y espacios se definen en un archivo separado para reutilizarlos.</p>
+      </section>
+      <section id="anidacion">
+        <h2>Anidación</h2>
+        <p>Los títulos, párrafos y acciones de esta tarjeta usan selectores descendientes.</p>
+      </section>
+      <section id="mixins" class="aviso">
+        <h2>Mixins</h2>
+        <p>Los enlaces y este aviso comparten un mixin que recibe el color de fondo y el color del texto.</p>
+      </section>
+    </section>
+  </main>
+</body>
+</html>
