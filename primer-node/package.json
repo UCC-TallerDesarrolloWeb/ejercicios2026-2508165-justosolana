@@ -1,0 +1,15 @@
+{
+  "name": "primer-node",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Ejercicios de Node.js y herramientas de desarrollo de la unidad 5",
+  "type": "module",
+  "author": "Justo Solana",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^10.14.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.7",
+    "prettier": "^3.9.10"
+  }
+}
