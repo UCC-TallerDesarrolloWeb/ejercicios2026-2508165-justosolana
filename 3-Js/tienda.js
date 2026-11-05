@@ -57,7 +57,7 @@ const productos = [
         talle: ["XXS", "XS", "S", "M", "L", "XL"],
         precio: 35000,
         web: "https://www.daedo.com/collections/collection-itf-gloves/products/pritf-2022",
-        imagen: "protectores-manos.webp"
+        imagen: "protectores-pie.webp"
     }
 ];
 
