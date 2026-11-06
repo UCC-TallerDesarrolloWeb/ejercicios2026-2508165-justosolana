@@ -1,5 +1,7 @@
 ## :no_mouth: Ejercicios taller de desarrollo web
 
+## Autor
+
 - Justo **Solana** 
 - Benjamin **Rojo**
 
