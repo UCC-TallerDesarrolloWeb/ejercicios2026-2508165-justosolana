@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom'
-import Header from './Header.jsx'
-import Footer from './Footer.jsx'
-import './styles/Layout.scss'
+import Header from '@components/Header.jsx'
+import Footer from '@components/Footer.jsx'
+import '@styles/Layout.scss'
 
 function Layout({ isLoggedIn, onLogout }) {
   return (

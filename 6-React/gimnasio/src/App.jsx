@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Login from './Login.jsx'
-import Actividades from './Actividades.jsx'
-import Home from './Home.jsx'
-import Layout from './Layout.jsx'
+import Login from '@pages/Login.jsx'
+import Actividades from '@pages/Actividades.jsx'
+import Home from '@pages/Home.jsx'
+import Layout from '@components/Layout.jsx'
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false)

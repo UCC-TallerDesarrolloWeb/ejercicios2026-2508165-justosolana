@@ -1,4 +1,4 @@
-import './styles/Actividades.scss'
+import '@styles/Actividades.scss'
 
 const activities = [
   {

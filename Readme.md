@@ -88,7 +88,7 @@
 -  [x] Login Básico
 -  [x] Redirección de Rutas
 -  [x] Outlet
--  [ ] Estructura del Proyecto
+-  [x] Estructura del Proyecto
 -  [ ] Imágenes
 -  [ ] Children
 

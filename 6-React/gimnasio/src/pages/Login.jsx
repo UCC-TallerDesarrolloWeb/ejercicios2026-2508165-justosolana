@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import './styles/Login.scss'
+import '@styles/Login.scss'
 
 function Login({ onLogin }) {
   const navigate = useNavigate()
