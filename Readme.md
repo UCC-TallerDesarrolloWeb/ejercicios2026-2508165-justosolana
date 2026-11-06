@@ -89,7 +89,7 @@
 -  [x] Redirección de Rutas
 -  [x] Outlet
 -  [x] Estructura del Proyecto
--  [ ] Imágenes
+-  [x] Imágenes
 -  [ ] Children
 
 
