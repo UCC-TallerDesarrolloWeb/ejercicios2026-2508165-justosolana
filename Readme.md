@@ -85,7 +85,7 @@
 
 ## Unidad 6: Frameworks de JavaScript: React, Vue y Angular
 -  [x] Instalación de React Usando Vite
--  [ ] Login Básico
+-  [x] Login Básico
 -  [ ] Redirección de Rutas
 -  [ ] Outlet
 -  [ ] Estructura del Proyecto
