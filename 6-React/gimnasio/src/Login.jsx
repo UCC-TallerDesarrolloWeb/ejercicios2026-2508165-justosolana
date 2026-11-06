@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './styles/Login.scss'
 
-function Login() {
+function Login({ onLogin }) {
   const navigate = useNavigate()
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
@@ -11,6 +11,7 @@ function Login() {
     event.preventDefault()
     if (username === 'admin' && password === 'admin') {
       console.log('Login OK')
+      onLogin()
       navigate('/actividades')
     } else {
       console.log('Login Incorrecto')
@@ -18,7 +19,7 @@ function Login() {
   }
 
   return (
-    <main className="login-container">
+    <section className="login-container">
       <form className="login-form" onSubmit={handleLogin}>
         <h1>Iniciar Sesión</h1>
         <input
@@ -41,7 +42,7 @@ function Login() {
         />
         <button type="submit">Ingresar</button>
       </form>
-    </main>
+    </section>
   )
 }
 

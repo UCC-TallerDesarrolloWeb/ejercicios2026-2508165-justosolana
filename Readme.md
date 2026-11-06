@@ -87,7 +87,7 @@
 -  [x] Instalación de React Usando Vite
 -  [x] Login Básico
 -  [x] Redirección de Rutas
--  [ ] Outlet
+-  [x] Outlet
 -  [ ] Estructura del Proyecto
 -  [ ] Imágenes
 -  [ ] Children

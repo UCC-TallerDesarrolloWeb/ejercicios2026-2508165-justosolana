@@ -21,9 +21,9 @@ const activities = [
 
 const diasSemana = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado']
 
-function Actividades() {
+function Actividades({ isLoggedIn }) {
   return (
-    <main className="actividades">
+    <section className="actividades">
       <h1>Actividades</h1>
       <div className="actividades-lista">
         {activities.map((actividad) => (
@@ -38,10 +38,15 @@ function Actividades() {
                 </li>
               ))}
             </ul>
+            {isLoggedIn && (
+              <button type="button" onClick={() => console.log(`Inscripción: ${actividad.nombre}`)}>
+                Inscribir
+              </button>
+            )}
           </article>
         ))}
       </div>
-    </main>
+    </section>
   )
 }
 
