@@ -1,0 +1,55 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.layout-main {
+  flex: 1;
+}
+
+.header {
+  padding: 20px 24px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  a {
+    color: #333;
+    text-decoration: none;
+
+    &.active {
+      color: #007bff;
+      font-weight: bold;
+    }
+  }
+}
+
+.header button,
+.actividad button {
+  padding: 8px 16px;
+  border: 0;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.home {
+  padding: 40px 24px;
+  text-align: center;
+}
+
+.footer {
+  padding: 20px;
+  background-color: white;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
