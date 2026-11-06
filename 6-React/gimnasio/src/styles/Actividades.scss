@@ -1,0 +1,37 @@
+.actividades {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 24px;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+.actividades-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.actividad {
+  flex: 1 1 260px;
+  padding: 24px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #0000001a;
+
+  h2 {
+    margin-top: 0;
+    text-transform: capitalize;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  ul {
+    padding-left: 20px;
+    line-height: 1.8;
+  }
+}
