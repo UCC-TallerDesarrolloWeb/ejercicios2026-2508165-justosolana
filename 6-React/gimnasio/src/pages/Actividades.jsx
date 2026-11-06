@@ -1,25 +1,7 @@
+import Card from '@components/Card.jsx'
+import { activities, diasSemana } from '../data/actividades.js'
 import '@styles/Actividades.scss'
 
-const activities = [
-  {
-    nombre: 'taekwondo',
-    descripcion: 'Arte marcial coreana',
-    horarios: [
-      { dia: 2, 'hora-inicio': '18:30', 'hora-fin': '20:00' },
-      { dia: 4, 'hora-inicio': '18:30', 'hora-fin': '20:00' },
-    ],
-  },
-  {
-    nombre: 'zumba',
-    descripcion: 'ritmos latinos',
-    horarios: [
-      { dia: 1, 'hora-inicio': '19:30', 'hora-fin': '20:30' },
-      { dia: 3, 'hora-inicio': '19:30', 'hora-fin': '20:30' },
-    ],
-  },
-]
-
-const diasSemana = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado']
 
 function Actividades({ isLoggedIn }) {
   return (
@@ -27,9 +9,11 @@ function Actividades({ isLoggedIn }) {
       <h1>Actividades</h1>
       <div className="actividades-lista">
         {activities.map((actividad) => (
-          <article className="actividad" key={actividad.nombre}>
-            <h2>{actividad.nombre}</h2>
-            <p>{actividad.descripcion}</p>
+          <Card
+            key={actividad.nombre}
+            title={actividad.nombre}
+            subtitle={actividad.descripcion}
+          >
             <h3>Horarios</h3>
             <ul>
               {actividad.horarios.map((horario) => (
@@ -43,7 +27,7 @@ function Actividades({ isLoggedIn }) {
                 Inscribir
               </button>
             )}
-          </article>
+          </Card>
         ))}
       </div>
     </section>
