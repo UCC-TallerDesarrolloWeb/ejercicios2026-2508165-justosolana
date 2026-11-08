@@ -1,0 +1,16 @@
+{
+  "info": {
+    "name": "Unidad 7 - PokeAPI",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Obtener Bulbasaur",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "https://pokeapi.co/api/v2/pokemon/1"
+      }
+    }
+  ]
+}
