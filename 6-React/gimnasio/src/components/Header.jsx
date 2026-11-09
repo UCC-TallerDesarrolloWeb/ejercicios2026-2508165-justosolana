@@ -8,6 +8,8 @@ function Header({ isLoggedIn, onLogout }) {
         <NavLink to="/login">Login</NavLink>
         <NavLink to="/actividades">Actividades</NavLink>
         <NavLink to="/poke">Pokémon</NavLink>
+        <NavLink to="/tienda">Tienda</NavLink>
+        <NavLink to="/carrito">Carrito</NavLink>
         {isLoggedIn && <button type="button" onClick={onLogout}>Logout</button>}
       </nav>
     </header>
