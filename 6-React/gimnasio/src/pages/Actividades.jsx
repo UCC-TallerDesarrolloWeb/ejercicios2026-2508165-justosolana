@@ -1,9 +1,22 @@
 import Card from '@components/Card.jsx'
-import { activities, diasSemana } from '../data/actividades.js'
+import { useEffect, useState } from 'react'
+import { diasSemana } from '../data/actividades.js'
 import '@styles/Actividades.scss'
 
 
 function Actividades({ isLoggedIn }) {
+  const [activities, setActivities] = useState([])
+
+  useEffect(() => {
+    fetch('http://localhost:4000/activities')
+      .then((response) => {
+        if (!response.ok) throw new Error('Error al obtener las actividades')
+        return response.json()
+      })
+      .then((data) => setActivities(data))
+      .catch((error) => console.error(error))
+  }, [])
+
   return (
     <section className="actividades">
       <h1>Actividades</h1>
