@@ -1,5 +1,31 @@
 ## Unidad 7: Backend y APIs
 
+### Cómo ejecutar la implementación final
+
+Los ejercicios están desarrollados en [6-React/gimnasio](../6-React/gimnasio/README.md).
+
+Desde la raíz del repositorio:
+
+```bash
+cd 6-React/gimnasio
+npm install
+npm run services
+```
+
+En una segunda terminal, dentro de `6-React/gimnasio`:
+
+```bash
+npm run dev
+```
+
+El servicio final usa `src/data/db.json`, con las colecciones `activities`, `products` y `cart`, en el puerto 4000. Para iniciar sesión se usa `admin` como usuario y contraseña.
+
+Las consignas de abajo conservan los pasos de cada ejercicio. `activities.json` corresponde al mock inicial; los nombres `product.json` y `productos.json` de la consigna del carrito se unificaron en `db.json` en la implementación final. Para ejecutar todos los ejercicios juntos, usar `npm run services` en lugar de iniciar esos archivos por separado.
+
+El [análisis de PokeAPI](analisis-pokeapi.md) y la [colección de Postman](pokeapi.postman_collection.json) se encuentran en esta carpeta.
+
+### Consignas
+
 ### Ejercicio: Mock del Backend
 1. En la carpeta donde se encuentre el package.json ejecutar:
 ```
