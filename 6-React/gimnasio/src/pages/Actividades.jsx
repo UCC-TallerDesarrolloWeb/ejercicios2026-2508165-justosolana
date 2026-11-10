@@ -6,6 +6,7 @@ import '@styles/Actividades.scss'
 
 function Actividades({ isLoggedIn }) {
   const [activities, setActivities] = useState([])
+  const [error, setError] = useState('')
 
   useEffect(() => {
     fetch('http://localhost:4000/activities')
@@ -14,12 +15,16 @@ function Actividades({ isLoggedIn }) {
         return response.json()
       })
       .then((data) => setActivities(data))
-      .catch((error) => console.error(error))
+      .catch((error) => {
+        setError('No se pudieron cargar las actividades. Verificá que el servicio esté iniciado.')
+        console.error(error)
+      })
   }, [])
 
   return (
     <section className="actividades">
       <h1>Actividades</h1>
+      {error && <p role="alert">{error}</p>}
       <div className="actividades-lista">
         {activities.map((actividad) => (
           <Card

@@ -4,6 +4,7 @@ import '@styles/Actividades.scss'
 
 function Poke() {
   const [pokemons, setPokemons] = useState([])
+  const [error, setError] = useState('')
 
   useEffect(() => {
     async function fetchAllPokemons() {
@@ -18,6 +19,7 @@ function Poke() {
         }
         setPokemons(lista)
       } catch (error) {
+        setError('No se pudieron cargar los Pokémon. Intentá nuevamente más tarde.')
         console.error(error)
       }
     }
@@ -28,7 +30,9 @@ function Poke() {
   return (
     <section className="actividades">
       <h1>Pokémon</h1>
-      {pokemons.length === 0 ? (
+      {error ? (
+        <p role="alert">{error}</p>
+      ) : pokemons.length === 0 ? (
         <p>Cargando Pokémon...</p>
       ) : (
         <div className="actividades-lista">
