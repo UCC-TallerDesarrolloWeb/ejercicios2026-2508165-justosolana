@@ -80,13 +80,18 @@ const cerrarDialog = () => {
 
 const sumar = () => {
 
-    let num1 = document.getElementById("nums1").value;
-    let num2 = document.getElementById("nums2").value;
+    let num1 = document.getElementById("nums1").value.trim().replace(",", ".");
+    let num2 = document.getElementById("nums2").value.trim().replace(",", ".");
 
     if (num1 != "" && num2 != "") {
 
         num1 = Number(num1);
         num2 = Number(num2);
+
+        if (!Number.isFinite(num1) || !Number.isFinite(num2)) {
+            document.getElementById("totalS").innerHTML = "Ingrese números válidos";
+            return;
+        }
 
         document.getElementById("totalS").innerHTML = num1 + num2;
     } else {
@@ -97,13 +102,18 @@ const sumar = () => {
 
 const restar = () => {
 
-    let num1 = document.getElementById("numr1").value;
-    let num2 = document.getElementById("numr2").value;
+    let num1 = document.getElementById("numr1").value.trim().replace(",", ".");
+    let num2 = document.getElementById("numr2").value.trim().replace(",", ".");
 
     if (num1 != "" && num2 != "") {
 
         num1 = Number(num1);
         num2 = Number(num2);
+
+        if (!Number.isFinite(num1) || !Number.isFinite(num2)) {
+            document.getElementById("totalR").innerHTML = "Ingrese números válidos";
+            return;
+        }
 
         document.getElementById("totalR").innerHTML = num1 - num2;
     } else {
@@ -114,13 +124,18 @@ const restar = () => {
 
 const multiplicar = () => {
 
-    let num1 = document.getElementById("numm1").value;
-    let num2 = document.getElementById("numm2").value;
+    let num1 = document.getElementById("numm1").value.trim().replace(",", ".");
+    let num2 = document.getElementById("numm2").value.trim().replace(",", ".");
 
     if (num1 != "" && num2 != "") {
 
         num1 = Number(num1);
         num2 = Number(num2);
+
+        if (!Number.isFinite(num1) || !Number.isFinite(num2)) {
+            document.getElementById("totalM").innerHTML = "Ingrese números válidos";
+            return;
+        }
 
         document.getElementById("totalM").innerHTML = num1 * num2;
     } else {
@@ -131,13 +146,23 @@ const multiplicar = () => {
 
 const dividir = () => {
 
-    let num1 = document.getElementById("numd1").value;
-    let num2 = document.getElementById("numd2").value;
+    let num1 = document.getElementById("numd1").value.trim().replace(",", ".");
+    let num2 = document.getElementById("numd2").value.trim().replace(",", ".");
 
     if (num1 != "" && num2 != "") {
 
         num1 = Number(num1);
         num2 = Number(num2);
+
+        if (!Number.isFinite(num1) || !Number.isFinite(num2)) {
+            document.getElementById("totalD").innerHTML = "Ingrese números válidos";
+            return;
+        }
+
+        if (num2 === 0) {
+            document.getElementById("totalD").innerHTML = "No se puede dividir por cero";
+            return;
+        }
 
         document.getElementById("totalD").innerHTML = num1 / num2;
     } else {
