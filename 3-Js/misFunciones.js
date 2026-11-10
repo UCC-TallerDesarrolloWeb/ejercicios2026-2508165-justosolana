@@ -89,6 +89,8 @@ const sumar = () => {
         num2 = Number(num2);
 
         document.getElementById("totalS").innerHTML = num1 + num2;
+    } else {
+        document.getElementById("totalS").innerHTML = "";
     }
 }
 
@@ -104,6 +106,8 @@ const restar = () => {
         num2 = Number(num2);
 
         document.getElementById("totalR").innerHTML = num1 - num2;
+    } else {
+        document.getElementById("totalR").innerHTML = "";
     }
 }
 
@@ -119,6 +123,8 @@ const multiplicar = () => {
         num2 = Number(num2);
 
         document.getElementById("totalM").innerHTML = num1 * num2;
+    } else {
+        document.getElementById("totalM").innerHTML = "";
     }
 }
 
@@ -134,5 +140,7 @@ const dividir = () => {
         num2 = Number(num2);
 
         document.getElementById("totalD").innerHTML = num1 / num2;
+    } else {
+        document.getElementById("totalD").innerHTML = "";
     }
 }
