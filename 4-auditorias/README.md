@@ -69,9 +69,36 @@ npx --yes lighthouse http://127.0.0.1:8008/2-CSS/productos.html --chrome-flags="
 - Lighthouse: 13.6.0.
 - Navegador: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36.
 
-Los informes guardados son los resultados reales de las herramientas. Las comprobaciones automáticas no sustituyen una revisión manual con teclado ni verifican todas las condiciones de accesibilidad. No se evaluaron en esta entrega el carrito, los componentes Bootstrap, Interiores ni las rutas de React; sus correcciones se revisan por separado.
+Los informes guardados son los resultados reales de las herramientas. Las comprobaciones automáticas no sustituyen una revisión manual con teclado ni verifican todas las condiciones de accesibilidad. Las auditorías completas anteriores corresponden solo al formulario y al catálogo. La comprobación específica de contraste de otras páginas se detalla a continuación.
 
 Referencias:
 
 - [AXE CLI](https://github.com/dequelabs/axe-core-npm/tree/develop/packages/cli).
 - [Lighthouse](https://github.com/GoogleChrome/lighthouse#using-the-node-cli).
+
+## Corrección de contraste
+
+Se corrigieron los colores del timeline de Bootstrap, Interiores y los botones de React.
+
+- Timeline: se usan las clases `badge text-bg-info`, `text-bg-warning` y `text-bg-danger` para los estados. Se quitó la transparencia de las fechas.
+- Interiores: se cambió el naranja a `#a84b00` para que el texto blanco se lea mejor y se recompiló el SCSS a CSS.
+- React: se cambió el azul de botones y enlaces activos a `#0056b3`.
+
+| Combinación corregida | Contraste aproximado |
+|---|---:|
+| Blanco sobre azul de React | 7,04:1 |
+| Blanco sobre naranja de Interiores | 5,72:1 |
+| Blanco sobre fondo gris del timeline | 4,69:1 |
+| Negro sobre celeste del estado Completed | 10,72:1 |
+| Negro sobre amarillo del estado In Progress | 12,88:1 |
+| Blanco sobre rojo del estado Blocked | 4,53:1 |
+
+Se ejecutó AXE con la regla `color-contrast` sobre estas páginas:
+
+- `4-Bootstrap/timeline.html`.
+- `5-SASS/interiores/index.html`.
+- React: `/login`, `/actividades` y `/tienda`, con los datos del servicio cargados.
+
+Resultado: **0 infracciones de contraste detectadas en las cinco páginas**. Esta comprobación es específica de contraste y no equivale a una auditoría completa de accesibilidad de esas páginas. No incluye los estados que requieren iniciar sesión ni el modal abierto.
+
+[Resultado de AXE para contraste](contraste.json).
