@@ -34,9 +34,9 @@
 -  [x] Incrustado
 -  [x] Estilo con Descendientes
 -  [x] Pseudo Clases
--  [x] CV
+-  [x] [CV](2-CSS/ej_cv.html)
 -  [x] Backgrounds
--  [x] Position
+-  [x] [Position](2-CSS/ej_cv.html)
 -  [x] 2 Columnas
 -  [x] Grid
 -  [x] grid-areas
