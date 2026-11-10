@@ -1,0 +1,2342 @@
+[
+  {
+    "testEngine": {
+      "name": "axe-core",
+      "version": "4.14.0"
+    },
+    "testRunner": {
+      "name": "axe"
+    },
+    "testEnvironment": {
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+      "windowWidth": 756,
+      "windowHeight": 413,
+      "orientationAngle": 0,
+      "orientationType": "landscape-primary"
+    },
+    "timestamp": "2026-11-10T16:08:57.205Z",
+    "url": "http://127.0.0.1:8008/4-Bootstrap/timeline.html",
+    "toolOptions": {
+      "runOnly": {
+        "type": "rule",
+        "values": [
+          "color-contrast"
+        ]
+      },
+      "reporter": "v1"
+    },
+    "inapplicable": [],
+    "passes": [
+      {
+        "id": "color-contrast",
+        "impact": null,
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT",
+          "RGAAv4",
+          "RGAA-3.2.1"
+        ],
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=webdriverjs",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ffffff",
+                  "bgColor": "#000000",
+                  "contrastRatio": 21,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2 class=\"fs-5 fw-bold py-3 mb-0\">Enero</h2>",
+            "target": [
+              ".col-6:nth-child(1) > .py-3"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ffffff",
+                  "bgColor": "#000000",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"col border border-light\">Semana 1</div>",
+            "target": [
+              ".col-6:nth-child(1) > .row-cols-4.row.g-0 > .col.border-light.border:nth-child(1)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ffffff",
+                  "bgColor": "#000000",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"col border border-light\">Semana 2</div>",
+            "target": [
+              ".col-6:nth-child(1) > .row-cols-4.row.g-0 > .col.border-light.border:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ffffff",
+                  "bgColor": "#000000",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"col border border-light\">Semana 3</div>",
+            "target": [
+              ".col-6:nth-child(1) > .row-cols-4.row.g-0 > .col.border-light.border:nth-child(3)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ffffff",
+                  "bgColor": "#000000",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"col border border-light\">Semana 4</div>",
+            "target": [
+              ".col-6:nth-child(1) > .row-cols-4.row.g-0 > .col.border-light.border:nth-child(4)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ffffff",
+                  "bgColor": "#000000",
+                  "contrastRatio": 21,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2 class=\"fs-5 fw-bold py-3 mb-0\">Febrero</h2>",
+            "target": [
+              ".col-6:nth-child(2) > .py-3"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ffffff",
+                  "bgColor": "#000000",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"col border border-light\">Semana 1</div>",
+            "target": [
+              ".col-6:nth-child(2) > .row-cols-4.row.g-0 > .col.border-light.border:nth-child(1)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ffffff",
+                  "bgColor": "#000000",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"col border border-light\">Semana 2</div>",
+            "target": [
+              ".col-6:nth-child(2) > .row-cols-4.row.g-0 > .col.border-light.border:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ffffff",
+                  "bgColor": "#000000",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"col border border-light\">Semana 3</div>",
+            "target": [
+              ".col-6:nth-child(2) > .row-cols-4.row.g-0 > .col.border-light.border:nth-child(3)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ffffff",
+                  "bgColor": "#000000",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"col border border-light\">Semana 4</div>",
+            "target": [
+              ".col-6:nth-child(2) > .row-cols-4.row.g-0 > .col.border-light.border:nth-child(4)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#0dcaf0",
+                  "contrastRatio": 10.72,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 10.72"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"badge text-bg-info mb-1\">Completed</p>",
+            "target": [
+              ".text-bg-info"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ffffff",
+                  "bgColor": "#6c757d",
+                  "contrastRatio": 4.68,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 4.68"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2 class=\"fs-5 fw-bold mb-1\">Define Architecture</h2>",
+            "target": [
+              ".mb-3.row.g-0:nth-child(1) > .col-5 > article > div:nth-child(1) > h2"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ffffff",
+                  "bgColor": "#6c757d",
+                  "contrastRatio": 4.68,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 4.68"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<time datetime=\"2026-01-20\">20 Enero</time>",
+            "target": [
+              ".mb-3.row.g-0:nth-child(1) > .col-5 > article > div:nth-child(1) > .mb-0 > time"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#ffc107",
+                  "contrastRatio": 12.88,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.88"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"badge text-bg-warning mb-1\">In Progress</p>",
+            "target": [
+              ".text-bg-warning"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ffffff",
+                  "bgColor": "#6c757d",
+                  "contrastRatio": 4.68,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 4.68"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2 class=\"fs-5 fw-bold mb-1\">Define Architecture</h2>",
+            "target": [
+              ".offset-3 > article > div:nth-child(1) > h2"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ffffff",
+                  "bgColor": "#6c757d",
+                  "contrastRatio": 4.68,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 4.68"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<time datetime=\"2026-01-20\">20 Enero</time>",
+            "target": [
+              ".offset-3 > article > div:nth-child(1) > .mb-0 > time"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ffffff",
+                  "bgColor": "#dc3545",
+                  "contrastRatio": 4.52,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 4.52"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"badge text-bg-danger mb-1\">Blocked</p>",
+            "target": [
+              ".text-bg-danger"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ffffff",
+                  "bgColor": "#6c757d",
+                  "contrastRatio": 4.68,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 4.68"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2 class=\"fs-5 fw-bold mb-1\">Define Architecture</h2>",
+            "target": [
+              ".offset-5 > article > div:nth-child(1) > h2"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ffffff",
+                  "bgColor": "#6c757d",
+                  "contrastRatio": 4.68,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 4.68"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<time datetime=\"2026-01-20\">20 Enero</time>",
+            "target": [
+              ".offset-5 > article > div:nth-child(1) > .mb-0 > time"
+            ]
+          }
+        ]
+      }
+    ],
+    "incomplete": [],
+    "violations": []
+  },
+  {
+    "testEngine": {
+      "name": "axe-core",
+      "version": "4.14.0"
+    },
+    "testRunner": {
+      "name": "axe"
+    },
+    "testEnvironment": {
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+      "windowWidth": 756,
+      "windowHeight": 413,
+      "orientationAngle": 0,
+      "orientationType": "landscape-primary"
+    },
+    "timestamp": "2026-11-10T16:08:58.474Z",
+    "url": "http://127.0.0.1:8008/5-SASS/interiores/index.html",
+    "toolOptions": {
+      "runOnly": {
+        "type": "rule",
+        "values": [
+          "color-contrast"
+        ]
+      },
+      "reporter": "v1"
+    },
+    "inapplicable": [],
+    "passes": [
+      {
+        "id": "color-contrast",
+        "impact": null,
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT",
+          "RGAAv4",
+          "RGAA-3.2.1"
+        ],
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=webdriverjs",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#666666",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 5.74,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 5.74"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a href=\"#home\">Home</a>",
+            "target": [
+              "nav > a[href$=\"#home\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#666666",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 5.74,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 5.74"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a href=\"#portfolio\">Portfolio</a>",
+            "target": [
+              "nav > a[href$=\"#portfolio\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#666666",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 5.74,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 5.74"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a href=\"#about\">About</a>",
+            "target": [
+              "a[href$=\"#about\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#666666",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 5.74,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 5.74"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a href=\"#contact\">Contact</a>",
+            "target": [
+              "a[href$=\"#contact\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ffffff",
+                  "bgColor": "#a84b00",
+                  "contrastRatio": 5.71,
+                  "fontSize": "24.0pt (32px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 5.71"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h1 id=\"welcome-title\">Hello, Welcome to my Portfolio</h1>",
+            "target": [
+              "#welcome-title"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ffffff",
+                  "bgColor": "#a84b00",
+                  "contrastRatio": 5.71,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 5.71"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p>",
+            "target": [
+              "#about > p"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#222222",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 15.9,
+                  "fontSize": "9.6pt (12.8px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 15.9"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"button\" href=\"#portfolio\">More About Me</a>",
+            "target": [
+              ".button"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ffffff",
+                  "bgColor": "#000000",
+                  "contrastRatio": 21,
+                  "fontSize": "8.4pt (11.2px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p>Black Design · Interior Design Portfolio</p>",
+            "target": [
+              "#contact > p"
+            ]
+          }
+        ]
+      }
+    ],
+    "incomplete": [],
+    "violations": []
+  },
+  {
+    "testEngine": {
+      "name": "axe-core",
+      "version": "4.14.0"
+    },
+    "testRunner": {
+      "name": "axe"
+    },
+    "testEnvironment": {
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+      "windowWidth": 756,
+      "windowHeight": 413,
+      "orientationAngle": 0,
+      "orientationType": "landscape-primary"
+    },
+    "timestamp": "2026-11-10T16:09:00.328Z",
+    "url": "http://127.0.0.1:5173/login",
+    "toolOptions": {
+      "runOnly": {
+        "type": "rule",
+        "values": [
+          "color-contrast"
+        ]
+      },
+      "reporter": "v1"
+    },
+    "inapplicable": [],
+    "passes": [
+      {
+        "id": "color-contrast",
+        "impact": null,
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT",
+          "RGAAv4",
+          "RGAA-3.2.1"
+        ],
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=webdriverjs",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 12.63,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.63"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"\" href=\"/home\" data-discover=\"true\">Home</a>",
+            "target": [
+              "a[href$=\"home\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0056b3",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 7.04,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.04"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a aria-current=\"page\" class=\"active\" href=\"/login\" data-discover=\"true\">Login</a>",
+            "target": [
+              ".active"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 12.63,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.63"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"\" href=\"/actividades\" data-discover=\"true\">Actividades</a>",
+            "target": [
+              "a[href$=\"actividades\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 12.63,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.63"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"\" href=\"/poke\" data-discover=\"true\">Pokémon</a>",
+            "target": [
+              "a[href$=\"poke\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 12.63,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.63"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"\" href=\"/tienda\" data-discover=\"true\">Tienda</a>",
+            "target": [
+              "a[href$=\"tienda\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 12.63,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.63"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"\" href=\"/carrito\" data-discover=\"true\">Carrito</a>",
+            "target": [
+              "a[href$=\"carrito\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 12.63,
+                  "fontSize": "16.5pt (22px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.63"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h1>Iniciar Sesión</h1>",
+            "target": [
+              "h1"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<input id=\"username\" placeholder=\"Usuario\" aria-label=\"Usuario\" autocomplete=\"username\" type=\"text\" value=\"\">",
+            "target": [
+              "#username"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<input id=\"password\" placeholder=\"Contraseña\" aria-label=\"Contraseña\" autocomplete=\"current-password\" type=\"password\" value=\"\">",
+            "target": [
+              "#password"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ffffff",
+                  "bgColor": "#0056b3",
+                  "contrastRatio": 7.04,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.04"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<button type=\"submit\">Ingresar</button>",
+            "target": [
+              "button"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 12.63,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.63"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<footer class=\"footer\">Gimnasio</footer>",
+            "target": [
+              "footer"
+            ]
+          }
+        ]
+      }
+    ],
+    "incomplete": [],
+    "violations": []
+  },
+  {
+    "testEngine": {
+      "name": "axe-core",
+      "version": "4.14.0"
+    },
+    "testRunner": {
+      "name": "axe"
+    },
+    "testEnvironment": {
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+      "windowWidth": 756,
+      "windowHeight": 413,
+      "orientationAngle": 0,
+      "orientationType": "landscape-primary"
+    },
+    "timestamp": "2026-11-10T16:09:01.494Z",
+    "url": "http://127.0.0.1:5173/actividades",
+    "toolOptions": {
+      "runOnly": {
+        "type": "rule",
+        "values": [
+          "color-contrast"
+        ]
+      },
+      "reporter": "v1"
+    },
+    "inapplicable": [],
+    "passes": [
+      {
+        "id": "color-contrast",
+        "impact": null,
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT",
+          "RGAAv4",
+          "RGAA-3.2.1"
+        ],
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=webdriverjs",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 12.63,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.63"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"\" href=\"/home\" data-discover=\"true\">Home</a>",
+            "target": [
+              "a[href$=\"home\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 12.63,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.63"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"\" href=\"/login\" data-discover=\"true\">Login</a>",
+            "target": [
+              "a[href$=\"login\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0056b3",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 7.04,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.04"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a aria-current=\"page\" class=\"active\" href=\"/actividades\" data-discover=\"true\">Actividades</a>",
+            "target": [
+              ".active"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 12.63,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.63"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"\" href=\"/poke\" data-discover=\"true\">Pokémon</a>",
+            "target": [
+              "a[href$=\"poke\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 12.63,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.63"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"\" href=\"/tienda\" data-discover=\"true\">Tienda</a>",
+            "target": [
+              "a[href$=\"tienda\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 12.63,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.63"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"\" href=\"/carrito\" data-discover=\"true\">Carrito</a>",
+            "target": [
+              "a[href$=\"carrito\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#f2f2f2",
+                  "contrastRatio": 11.28,
+                  "fontSize": "24.0pt (32px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 11.28"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h1>Actividades</h1>",
+            "target": [
+              "h1"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 12.63,
+                  "fontSize": "18.0pt (24px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.63"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2>taekwondo</h2>",
+            "target": [
+              "article:nth-child(1) > h2"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 12.63,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.63"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p>Arte marcial coreana</p>",
+            "target": [
+              "article:nth-child(1) > p"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 12.63,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.63"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h3>Horarios</h3>",
+            "target": [
+              "article:nth-child(1) > h3"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 12.63,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.63"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li>Martes: 18:30 a 20:00</li>",
+            "target": [
+              "article:nth-child(1) > ul > li:nth-child(1)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 12.63,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.63"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li>Jueves: 18:30 a 20:00</li>",
+            "target": [
+              "article:nth-child(1) > ul > li:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 12.63,
+                  "fontSize": "18.0pt (24px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.63"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2>zumba</h2>",
+            "target": [
+              "article:nth-child(2) > h2"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 12.63,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.63"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p>ritmos latinos</p>",
+            "target": [
+              "article:nth-child(2) > p"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 12.63,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.63"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h3>Horarios</h3>",
+            "target": [
+              "article:nth-child(2) > h3"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 12.63,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.63"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li>Lunes: 19:30 a 20:30</li>",
+            "target": [
+              "article:nth-child(2) > ul > li:nth-child(1)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 12.63,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.63"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li>Miércoles: 19:30 a 20:30</li>",
+            "target": [
+              "article:nth-child(2) > ul > li:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 12.63,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.63"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<footer class=\"footer\">Gimnasio</footer>",
+            "target": [
+              "footer"
+            ]
+          }
+        ]
+      }
+    ],
+    "incomplete": [],
+    "violations": []
+  },
+  {
+    "testEngine": {
+      "name": "axe-core",
+      "version": "4.14.0"
+    },
+    "testRunner": {
+      "name": "axe"
+    },
+    "testEnvironment": {
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+      "windowWidth": 756,
+      "windowHeight": 413,
+      "orientationAngle": 0,
+      "orientationType": "landscape-primary"
+    },
+    "timestamp": "2026-11-10T16:09:02.649Z",
+    "url": "http://127.0.0.1:5173/tienda",
+    "toolOptions": {
+      "runOnly": {
+        "type": "rule",
+        "values": [
+          "color-contrast"
+        ]
+      },
+      "reporter": "v1"
+    },
+    "inapplicable": [],
+    "passes": [
+      {
+        "id": "color-contrast",
+        "impact": null,
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT",
+          "RGAAv4",
+          "RGAA-3.2.1"
+        ],
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=webdriverjs",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 12.63,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.63"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"\" href=\"/home\" data-discover=\"true\">Home</a>",
+            "target": [
+              "a[href$=\"home\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 12.63,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.63"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"\" href=\"/login\" data-discover=\"true\">Login</a>",
+            "target": [
+              "a[href$=\"login\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 12.63,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.63"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"\" href=\"/actividades\" data-discover=\"true\">Actividades</a>",
+            "target": [
+              "a[href$=\"actividades\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 12.63,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.63"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"\" href=\"/poke\" data-discover=\"true\">Pokémon</a>",
+            "target": [
+              "a[href$=\"poke\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0056b3",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 7.04,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.04"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a aria-current=\"page\" class=\"active\" href=\"/tienda\" data-discover=\"true\">Tienda</a>",
+            "target": [
+              ".active"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 12.63,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.63"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"\" href=\"/carrito\" data-discover=\"true\">Carrito</a>",
+            "target": [
+              "a[href$=\"carrito\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#f2f2f2",
+                  "contrastRatio": 11.28,
+                  "fontSize": "24.0pt (32px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 11.28"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h1>Tienda</h1>",
+            "target": [
+              "h1"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#f2f2f2",
+                  "contrastRatio": 11.28,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 11.28"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p>Iniciá sesión para agregar productos al carrito.</p>",
+            "target": [
+              "p:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 12.63,
+                  "fontSize": "18.0pt (24px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.63"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2>Cabezal Sparring</h2>",
+            "target": [
+              "article:nth-child(1) > h2"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 12.63,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.63"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p>$&nbsp;35.000,00</p>",
+            "target": [
+              "article:nth-child(1) > p"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ffffff",
+                  "bgColor": "#0056b3",
+                  "contrastRatio": 7.04,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.04"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<button type=\"button\">Ver detalle</button>",
+            "target": [
+              "article:nth-child(1) > .acciones > button:nth-child(1)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 12.63,
+                  "fontSize": "18.0pt (24px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.63"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2>Dobok Dan</h2>",
+            "target": [
+              "article:nth-child(2) > h2"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 12.63,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.63"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p>$&nbsp;115.000,00</p>",
+            "target": [
+              "article:nth-child(2) > p"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ffffff",
+                  "bgColor": "#0056b3",
+                  "contrastRatio": 7.04,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.04"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<button type=\"button\">Ver detalle</button>",
+            "target": [
+              "article:nth-child(2) > .acciones > button:nth-child(1)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 12.63,
+                  "fontSize": "18.0pt (24px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.63"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2>Escudo de Potencia</h2>",
+            "target": [
+              "article:nth-child(3) > h2"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 12.63,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.63"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p>$&nbsp;51.700,00</p>",
+            "target": [
+              "article:nth-child(3) > p"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ffffff",
+                  "bgColor": "#0056b3",
+                  "contrastRatio": 7.04,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.04"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<button type=\"button\">Ver detalle</button>",
+            "target": [
+              "article:nth-child(3) > .acciones > button:nth-child(1)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 12.63,
+                  "fontSize": "18.0pt (24px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.63"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2>Par de focos redondos</h2>",
+            "target": [
+              "article:nth-child(4) > h2"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 12.63,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.63"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p>$&nbsp;15.000,00</p>",
+            "target": [
+              "article:nth-child(4) > p"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ffffff",
+                  "bgColor": "#0056b3",
+                  "contrastRatio": 7.04,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.04"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<button type=\"button\">Ver detalle</button>",
+            "target": [
+              "article:nth-child(4) > .acciones > button:nth-child(1)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 12.63,
+                  "fontSize": "18.0pt (24px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.63"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2>Guantes 10 onzas</h2>",
+            "target": [
+              "article:nth-child(5) > h2"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 12.63,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.63"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p>$&nbsp;35.000,00</p>",
+            "target": [
+              "article:nth-child(5) > p"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ffffff",
+                  "bgColor": "#0056b3",
+                  "contrastRatio": 7.04,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.04"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<button type=\"button\">Ver detalle</button>",
+            "target": [
+              "article:nth-child(5) > .acciones > button:nth-child(1)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 12.63,
+                  "fontSize": "18.0pt (24px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.63"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2>Protectores Pie</h2>",
+            "target": [
+              "article:nth-child(6) > h2"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 12.63,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.63"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p>$&nbsp;35.000,00</p>",
+            "target": [
+              "article:nth-child(6) > p"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ffffff",
+                  "bgColor": "#0056b3",
+                  "contrastRatio": 7.04,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.04"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<button type=\"button\">Ver detalle</button>",
+            "target": [
+              "article:nth-child(6) > .acciones > button:nth-child(1)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#333333",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 12.63,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 12.63"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<footer class=\"footer\">Gimnasio</footer>",
+            "target": [
+              "footer"
+            ]
+          }
+        ]
+      }
+    ],
+    "incomplete": [],
+    "violations": []
+  }
+]

@@ -17,7 +17,7 @@
     padding: 8px 16px;
     border: 0;
     border-radius: 4px;
-    background-color: #007bff;
+    background-color: #0056b3;
     color: white;
     cursor: pointer;
 
@@ -32,21 +32,17 @@
   }
 }
 
-.modal-fondo {
-  position: fixed;
-  inset: 0;
+.producto-modal::backdrop {
   background: #0008;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 24px;
 }
 
 .producto-modal {
   background: white;
+  color: inherit;
   padding: 24px;
+  border: 0;
   border-radius: 8px;
-  width: 100%;
+  width: calc(100% - 48px);
   max-width: 450px;
   max-height: 85vh;
   overflow-y: auto;

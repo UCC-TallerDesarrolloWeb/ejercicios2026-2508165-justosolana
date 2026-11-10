@@ -1,16 +1,70 @@
-# React + Vite
+# Gimnasio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Aplicación de los ejercicios de React y APIs de las unidades 6 y 7. Incluye inicio de sesión, actividades, consulta de Pokémon, tienda y carrito.
 
-Currently, two official plugins are available:
+## Instalación
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Se necesita Node.js y npm. Desde la raíz del repositorio:
 
-## React Compiler
+```bash
+cd 6-React/gimnasio
+npm install
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Ejecución
 
-## Expanding the Oxlint configuration
+En una terminal, dentro de `6-React/gimnasio`, iniciar el servicio de datos:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+```bash
+npm run services
+```
+
+El servicio usa `src/data/db.json` y queda disponible en `http://localhost:4000`.
+
+En otra terminal, dentro de la misma carpeta, iniciar React:
+
+```bash
+npm run dev
+```
+
+Abrir la dirección que muestra Vite, normalmente `http://localhost:5173`. Mantener las dos terminales abiertas mientras se usa la aplicación.
+
+## Acceso de práctica
+
+- Usuario: `admin`.
+- Contraseña: `admin`.
+
+Al ingresar se abre Actividades. En Tienda, agregar productos al carrito requiere iniciar sesión. La sesión se guarda en el estado de React, por lo que se reinicia al recargar la página.
+
+## Pantallas
+
+| Ruta | Contenido |
+|---|---|
+| `/` o `/home` | Actividades del gimnasio con imágenes |
+| `/login` | Inicio de sesión |
+| `/actividades` | Actividades y horarios obtenidos del servicio local |
+| `/poke` | Primeros 20 Pokémon obtenidos de PokeAPI |
+| `/tienda` | Productos, detalle en un diálogo y botón para agregar al carrito |
+| `/carrito` | Cantidades, eliminación de productos, vaciado y total |
+
+La consulta de Pokémon necesita conexión a Internet.
+
+## Datos y configuración
+
+- [src/data/db.json](src/data/db.json): colecciones `activities`, `products` y `cart` del servicio final.
+- [src/data/activities.json](src/data/activities.json): archivo del primer ejercicio de mock del backend. Para ejecutar la aplicación completa se usa `db.json`.
+- [.env](.env): contiene `VITE_BASE_URL="http://localhost:4000/"`, utilizada por las funciones de la tienda y el carrito.
+- [src/api/store.js](src/api/store.js): peticiones de productos y carrito.
+
+El servicio local expone `GET /activities`, `GET /products`, `GET /cart`, `POST /cart`, `PATCH /cart/:id` y `DELETE /cart/:id`. Para vaciar el carrito se elimina cada elemento por su identificador.
+
+## Comprobaciones
+
+Desde `6-React/gimnasio`:
+
+```bash
+npm run lint
+npm run build
+```
+
+`lint` revisa el código y `build` genera la versión compilada en `dist`.

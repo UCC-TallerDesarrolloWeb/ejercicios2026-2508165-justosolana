@@ -41,11 +41,11 @@ body {
   text-decoration: none;
 }
 .header nav a:hover {
-  color: #ef7300;
+  color: #a84b00;
 }
 
 .welcome {
-  background: #ef7300;
+  background: #a84b00;
   color: #fff;
   padding: 64px 11%;
 }

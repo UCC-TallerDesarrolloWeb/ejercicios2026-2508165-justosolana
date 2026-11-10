@@ -15,6 +15,12 @@ function Store({ isLoggedIn }) {
       .catch((error) => setMensaje(error.message))
   }, [])
 
+  useEffect(() => {
+    if (detalle) {
+      document.getElementById('detalle-producto').showModal()
+    }
+  }, [detalle])
+
   async function agregar(producto) {
     setAgregando(true)
     try {
@@ -48,8 +54,12 @@ function Store({ isLoggedIn }) {
         ))}
       </div>
       {detalle && (
-        <div className="modal-fondo">
-          <section className="producto-modal" role="dialog" aria-modal="true" aria-labelledby="detalle-titulo">
+        <dialog
+          id="detalle-producto"
+          className="producto-modal"
+          aria-labelledby="detalle-titulo"
+          onClose={() => setDetalle(null)}
+        >
             <h2 id="detalle-titulo">{detalle.nombre}</h2>
             <img className="producto-imagen" src={`/products/${detalle.imagen}`} alt={detalle.nombre} />
             <p>{detalle.description}</p>
@@ -57,9 +67,8 @@ function Store({ isLoggedIn }) {
             <p>Categoría: {detalle.categoria}</p>
             <p>Talles: {detalle.talle.join(', ')}</p>
             <p>{formatPrice(detalle.precio)}</p>
-            <button autoFocus type="button" onClick={() => setDetalle(null)}>Cerrar</button>
-          </section>
-        </div>
+            <button autoFocus type="button" onClick={() => document.getElementById('detalle-producto').close()}>Cerrar</button>
+        </dialog>
       )}
     </section>
   )
